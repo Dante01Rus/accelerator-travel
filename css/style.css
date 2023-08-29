@@ -2209,7 +2209,7 @@ button,
 .header__menu-opened .header__burger-btn {
   width: 22px;
   height: 22px;
-  background: url("../../img/sprite/close-icon.svg") no-repeat center/22px 22px;
+  background: url("./img/sprite/close-icon.svg") no-repeat center/22px 22px;
 }
 
 .header--nojs .container {
@@ -2320,22 +2320,22 @@ button,
 }
 
 .hero__swiper-slide--caucasus {
-  background-image: -webkit-image-set(url("/img/hero/caucasus.webp") type("image/webp"), url("/img/hero/caucasus.png") type("image/png"));
-  background-image: image-set(url("/img/hero/caucasus.webp") type("image/webp"), url("/img/hero/caucasus.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/hero/caucasus.webp") type("image/webp"), url("./img/hero/caucasus.png") type("image/png"));
+  background-image: image-set(url("./img/hero/caucasus.webp") type("image/webp"), url("./img/hero/caucasus.png") type("image/png"));
   background-size: 1440px 800px;
   background-repeat: no-repeat;
 }
 
 .hero__swiper-slide--kamchatka {
-  background-image: -webkit-image-set(url("/img/hero/kamchatka.webp") type("image/webp"), url("/img/hero/kamchatka.png") type("image/png"));
-  background-image: image-set(url("/img/hero/kamchatka.webp") type("image/webp"), url("/img/hero/kamchatka.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/hero/kamchatka.webp") type("image/webp"), url("./img/hero/kamchatka.png") type("image/png"));
+  background-image: image-set(url("./img/hero/kamchatka.webp") type("image/webp"), url("./img/hero/kamchatka.png") type("image/png"));
   background-size: 1440px 800px;
   background-repeat: no-repeat;
 }
 
 .hero__swiper-slide--altai {
-  background-image: -webkit-image-set(url("/img/hero/altai.webp") type("image/webp"), url("/img/hero/altai.png") type("image/png"));
-  background-image: image-set(url("/img/hero/altai.webp") type("image/webp"), url("/img/hero/altai.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/hero/altai.webp") type("image/webp"), url("./img/hero/altai.png") type("image/png"));
+  background-image: image-set(url("./img/hero/altai.webp") type("image/webp"), url("./img/hero/altai.png") type("image/png"));
   background-size: 1440px 800px;
   background-repeat: no-repeat;
 }
@@ -2449,7 +2449,7 @@ button,
   left: 50%;
   width: 56px;
   height: 56px;
-  background: url("../../img/sprite.svg#play") no-repeat center/56px 56px;
+  background: url("../.../img/sprite.svg#play") no-repeat center/56px 56px;
   border: none;
   cursor: pointer;
   -webkit-transform: translate(-50%, -50%);
@@ -2459,15 +2459,15 @@ button,
 
 .hero__video-btn:hover,
 .hero__video-btn:focus-visible {
-  background-image: url("../../img/sprite.svg#play-hover");
+  background-image: url("../.../img/sprite.svg#play-hover");
 }
 
 .hero__video-btn:active {
-  background-image: url("../../img/sprite.svg#play-active");
+  background-image: url("../.../img/sprite.svg#play-active");
 }
 
 .hero__video-btn:disabled {
-  background-image: url("../../img/sprite.svg#play-disabled");
+  background-image: url("../.../img/sprite.svg#play-disabled");
   pointer-events: none;
 }
 
@@ -2533,8 +2533,8 @@ button,
 }
 
 .tour {
-  background-image: -webkit-image-set(url("/img/clouds.webp") type("image/webp"), url("/img/clouds.png") type("image/png"));
-  background-image: image-set(url("/img/clouds.webp") type("image/webp"), url("/img/clouds.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/clouds.webp") type("image/webp"), url("./img/clouds.png") type("image/png"));
+  background-image: image-set(url("./img/clouds.webp") type("image/webp"), url("./img/clouds.png") type("image/png"));
   background-size: 602px 1364px;
   background-repeat: no-repeat;
   background-position: right -20px;
@@ -2551,8 +2551,8 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-image: -webkit-image-set(url("/img/tour-little-cloud.webp") type("image/webp"), url("/img/tour-little-cloud.png") type("image/png"));
-  background-image: image-set(url("/img/tour-little-cloud.webp") type("image/webp"), url("/img/tour-little-cloud.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/tour-little-cloud.webp") type("image/webp"), url("./img/tour-little-cloud.png") type("image/png"));
+  background-image: image-set(url("./img/tour-little-cloud.webp") type("image/webp"), url("./img/tour-little-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 418px 279px;
   background-position: 0 491px;
@@ -2613,37 +2613,37 @@ button,
 }
 
 .tour__swiper-button--prev {
-  background: url("/img/sprite.svg#arrow-left");
+  background: url("./img/sprite.svg#arrow-left");
 }
 
 .tour__swiper-button--prev:hover,
 .tour__swiper-button--prev:focus-visible {
-  background: url("/img/sprite.svg#arrow-left-hf");
+  background: url("./img/sprite.svg#arrow-left-hf");
 }
 
 .tour__swiper-button--prev:active {
-  background: url("/img/sprite.svg#arrow-left-active");
+  background: url("./img/sprite.svg#arrow-left-active");
 }
 
 .tour__swiper-button--next {
-  background: url("/img/sprite.svg#arrow-right");
+  background: url("./img/sprite.svg#arrow-right");
 }
 
 .tour__swiper-button--next:hover,
 .tour__swiper-button--next:focus-visible {
-  background: url("/img/sprite.svg#arrow-right-hf");
+  background: url("./img/sprite.svg#arrow-right-hf");
 }
 
 .tour__swiper-button--next:active {
-  background: url("/img/sprite.svg#arrow-right-active");
+  background: url("./img/sprite.svg#arrow-right-active");
 }
 
 .tour__swiper-button--prev.tour__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .tour__swiper-button--next.tour__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .tour__swiper-slide {
@@ -2657,18 +2657,18 @@ button,
 }
 
 .tour__swiper-slide--caucasus {
-  background-image: -webkit-image-set(url("/../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
-  background-image: image-set(url("/../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/tour/tour-1.webp") type("image/webp"), url("./img/tour/tour-1.png") type("image/png"));
+  background-image: image-set(url("./img/tour/tour-1.webp") type("image/webp"), url("./img/tour/tour-1.png") type("image/png"));
 }
 
 .tour__swiper-slide--altai {
-  background-image: -webkit-image-set(url("/../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
-  background-image: image-set(url("/../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/tour/tour-2.webp") type("image/webp"), url("./img/tour/tour-2.png") type("image/png"));
+  background-image: image-set(url("./img/tour/tour-2.webp") type("image/webp"), url("./img/tour/tour-2.png") type("image/png"));
 }
 
 .tour__swiper-slide--adyghea {
-  background-image: -webkit-image-set(url("/../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
-  background-image: image-set(url("/../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/tour/tour-3.webp") type("image/webp"), url("./img/tour/tour-3.png") type("image/png"));
+  background-image: image-set(url("./img/tour/tour-3.webp") type("image/webp"), url("./img/tour/tour-3.png") type("image/png"));
 }
 
 .tour__info {
@@ -2776,7 +2776,7 @@ button,
   bottom: 4px;
   width: 80px;
   height: 14px;
-  background-image: url("/img/sprite.svg#star-empty");
+  background-image: url("./img/sprite.svg#star-empty");
   background-repeat: repeat;
   background-size: 16px 14px;
 }
@@ -2787,7 +2787,7 @@ button,
   left: 0;
   bottom: 4px;
   height: 14px;
-  background-image: url("/img/sprite.svg#star-filled");
+  background-image: url("./img/sprite.svg#star-filled");
   background-repeat: repeat;
   background-size: 16px 14px;
 }
@@ -2828,28 +2828,28 @@ button,
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  background: url("/img/sprite.svg#btn-arrow") no-repeat right -1px center/10px 14px;
+  background: url("./img/sprite.svg#btn-arrow") no-repeat right -1px center/10px 14px;
 }
 
 .tour__show-all:hover,
 .tour__show-all:focus-visible {
   color: #1c3374;
-  background-image: url("/img/sprite.svg#btn-arrow-hover");
+  background-image: url("./img/sprite.svg#btn-arrow-hover");
 }
 
 .tour__show-all:active {
   color: #0266c1;
-  background-image: url("/img/sprite.svg#btn-arrow-active");
+  background-image: url("./img/sprite.svg#btn-arrow-active");
 }
 
 .tour__show-all:disabled {
-  background-image: url("/img/sprite.svg#btn-arrow-disabled");
+  background-image: url("./img/sprite.svg#btn-arrow-disabled");
 }
 
 .training {
   margin-top: -1px;
-  background-image: -webkit-image-set(url("/img/clouds.webp") type("image/webp"), url("/img/clouds.png") type("image/png"));
-  background-image: image-set(url("/img/clouds.webp") type("image/webp"), url("/img/clouds.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/clouds.webp") type("image/webp"), url("./img/clouds.png") type("image/png"));
+  background-image: image-set(url("./img/clouds.webp") type("image/webp"), url("./img/clouds.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 602px 1364px;
   background-position: right -811px;
@@ -2859,7 +2859,7 @@ button,
   position: relative;
   padding-top: 24px;
   padding-bottom: 41px;
-  background-image: url("/img/sprite.svg#training-line");
+  background-image: url("./img/sprite.svg#training-line");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% 15px;
@@ -2926,37 +2926,37 @@ button,
 }
 
 .training__swiper-button--prev {
-  background: url("/img/sprite.svg#arrow-left");
+  background: url("./img/sprite.svg#arrow-left");
 }
 
 .training__swiper-button--prev:hover,
 .training__swiper-button--prev:focus-visible {
-  background: url("/img/sprite.svg#arrow-left-hf");
+  background: url("./img/sprite.svg#arrow-left-hf");
 }
 
 .training__swiper-button--prev:active {
-  background: url("/img/sprite.svg#arrow-left-active");
+  background: url("./img/sprite.svg#arrow-left-active");
 }
 
 .training__swiper-button--next {
-  background: url("/img/sprite.svg#arrow-right");
+  background: url("./img/sprite.svg#arrow-right");
 }
 
 .training__swiper-button--next:hover,
 .training__swiper-button--next:focus-visible {
-  background: url("/img/sprite.svg#arrow-right-hf");
+  background: url("./img/sprite.svg#arrow-right-hf");
 }
 
 .training__swiper-button--next:active {
-  background: url("/img/sprite.svg#arrow-right-active");
+  background: url("./img/sprite.svg#arrow-right-active");
 }
 
 .training__swiper-button--prev.training__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .training__swiper-button--next.training__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .training__swiper {
@@ -2995,17 +2995,17 @@ button,
   right: -1px;
   width: 24px;
   height: 24px;
-  background: url("/img/sprite.svg#vk") no-repeat;
+  background: url("./img/sprite.svg#vk") no-repeat;
   cursor: pointer;
 }
 
 .training__trainer-page:hover,
 .training__trainer-page:focus-visible {
-  background: url("/img/sprite.svg#vk-hover") no-repeat;
+  background: url("./img/sprite.svg#vk-hover") no-repeat;
 }
 
 .training__trainer-page:active {
-  background: url("/img/sprite.svg#vk-active") no-repeat;
+  background: url("./img/sprite.svg#vk-active") no-repeat;
 }
 
 .training__swiper-slide p {
@@ -3045,24 +3045,24 @@ button,
 }
 
 .training__process-item--map {
-  background: url("/img/sprite.svg#map") no-repeat left 10px/25px 25px;
+  background: url("./img/sprite.svg#map") no-repeat left 10px/25px 25px;
 }
 
 .training__process-item--boots {
-  background: url("/img/sprite.svg#boots") no-repeat 1px 11px/24px 24px;
+  background: url("./img/sprite.svg#boots") no-repeat 1px 11px/24px 24px;
 }
 
 .training__process-item--tree {
-  background: url("/img/sprite.svg#pine-tree") no-repeat left 12px/23px 23px;
+  background: url("./img/sprite.svg#pine-tree") no-repeat left 12px/23px 23px;
 }
 
 .training__process-item--mountain {
-  background: url("/img/sprite.svg#mountain") no-repeat 2px 11px/25px 25px;
+  background: url("./img/sprite.svg#mountain") no-repeat 2px 11px/25px 25px;
 }
 
 .about {
-  background-image: -webkit-image-set(url("/img/about/about.webp") type("image/webp"), url("/img/about/about.png") type("image/png"));
-  background-image: image-set(url("/img/about/about.webp") type("image/webp"), url("/img/about/about.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/about/about.webp") type("image/webp"), url("./img/about/about.png") type("image/png"));
+  background-image: image-set(url("./img/about/about.webp") type("image/webp"), url("./img/about/about.png") type("image/png"));
   background-repeat: no-repeat;
   background-position: left 88px;
   background-size: 808px 474px;
@@ -3115,8 +3115,8 @@ button,
   padding-top: 25px;
   padding-bottom: 30px;
   overflow: hidden;
-  background-image: -webkit-image-set(url("/img/review-cloud.webp") type("image/webp"), url("/img/review-cloud.png") type("image/png"));
-  background-image: image-set(url("/img/review-cloud.webp") type("image/webp"), url("/img/review-cloud.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/review-cloud.webp") type("image/webp"), url("./img/review-cloud.png") type("image/png"));
+  background-image: image-set(url("./img/review-cloud.webp") type("image/webp"), url("./img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left 280px;
@@ -3160,37 +3160,37 @@ button,
 }
 
 .reviews__swiper-button--prev {
-  background: url("/img/sprite.svg#arrow-left");
+  background: url("./img/sprite.svg#arrow-left");
 }
 
 .reviews__swiper-button--prev:hover,
 .reviews__swiper-button--prev:focus-visible {
-  background: url("/img/sprite.svg#arrow-left-hf");
+  background: url("./img/sprite.svg#arrow-left-hf");
 }
 
 .reviews__swiper-button--prev:active {
-  background: url("/img/sprite.svg#arrow-left-active");
+  background: url("./img/sprite.svg#arrow-left-active");
 }
 
 .reviews__swiper-button--next {
-  background: url("/img/sprite.svg#arrow-right");
+  background: url("./img/sprite.svg#arrow-right");
 }
 
 .reviews__swiper-button--next:hover,
 .reviews__swiper-button--next:focus-visible {
-  background: url("/img/sprite.svg#arrow-right-hf");
+  background: url("./img/sprite.svg#arrow-right-hf");
 }
 
 .reviews__swiper-button--next:active {
-  background: url("/img/sprite.svg#arrow-right-active");
+  background: url("./img/sprite.svg#arrow-right-active");
 }
 
 .reviews__swiper-button--prev.reviews__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .reviews__swiper-button--next.reviews__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .reviews__swiper {
@@ -3253,8 +3253,8 @@ button,
   padding-top: 46px;
   padding-bottom: 66px;
   overflow: hidden;
-  background-image: -webkit-image-set(url("/img/review-cloud.webp") type("image/webp"), url("/img/review-cloud.png") type("image/png"));
-  background-image: image-set(url("/img/review-cloud.webp") type("image/webp"), url("/img/review-cloud.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/review-cloud.webp") type("image/webp"), url("./img/review-cloud.png") type("image/png"));
+  background-image: image-set(url("./img/review-cloud.webp") type("image/webp"), url("./img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left -190px;
@@ -3268,8 +3268,8 @@ button,
   width: 602px;
   height: 263px;
   z-index: 0;
-  background-image: -webkit-image-set(url("/img/advantage-cloud.webp") type("image/webp"), url("/img/advantage-cloud.png") type("image/png"));
-  background-image: image-set(url("/img/advantage-cloud.webp") type("image/webp"), url("/img/advantage-cloud.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/advantage-cloud.webp") type("image/webp"), url("./img/advantage-cloud.png") type("image/png"));
+  background-image: image-set(url("./img/advantage-cloud.webp") type("image/webp"), url("./img/advantage-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: center;
@@ -3321,37 +3321,37 @@ button,
 }
 
 .advantages__swiper-button--prev {
-  background: url("/img/sprite.svg#arrow-left");
+  background: url("./img/sprite.svg#arrow-left");
 }
 
 .advantages__swiper-button--prev:hover,
 .advantages__swiper-button--prev:focus-visible {
-  background: url("/img/sprite.svg#arrow-left-hf");
+  background: url("./img/sprite.svg#arrow-left-hf");
 }
 
 .advantages__swiper-button--prev:active {
-  background: url("/img/sprite.svg#arrow-left-active");
+  background: url("./img/sprite.svg#arrow-left-active");
 }
 
 .advantages__swiper-button--next {
-  background: url("/img/sprite.svg#arrow-right");
+  background: url("./img/sprite.svg#arrow-right");
 }
 
 .advantages__swiper-button--next:hover,
 .advantages__swiper-button--next:focus-visible {
-  background: url("/img/sprite.svg#arrow-right-hf");
+  background: url("./img/sprite.svg#arrow-right-hf");
 }
 
 .advantages__swiper-button--next:active {
-  background: url("/img/sprite.svg#arrow-right-active");
+  background: url("./img/sprite.svg#arrow-right-active");
 }
 
 .advantages__swiper-button--prev.advantages__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .advantages__swiper-button--next.advantages__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .advantages__swiper {
@@ -3444,37 +3444,37 @@ button,
 }
 
 .gallery__swiper-button--prev {
-  background: url("/img/sprite.svg#arrow-left");
+  background: url("./img/sprite.svg#arrow-left");
 }
 
 .gallery__swiper-button--prev:hover,
 .gallery__swiper-button--prev:focus-visible {
-  background: url("/img/sprite.svg#arrow-left-hf");
+  background: url("./img/sprite.svg#arrow-left-hf");
 }
 
 .gallery__swiper-button--prev:active {
-  background: url("/img/sprite.svg#arrow-left-active");
+  background: url("./img/sprite.svg#arrow-left-active");
 }
 
 .gallery__swiper-button--next {
-  background: url("/img/sprite.svg#arrow-right");
+  background: url("./img/sprite.svg#arrow-right");
 }
 
 .gallery__swiper-button--next:hover,
 .gallery__swiper-button--next:focus-visible {
-  background: url("/img/sprite.svg#arrow-right-hf");
+  background: url("./img/sprite.svg#arrow-right-hf");
 }
 
 .gallery__swiper-button--next:active {
-  background: url("/img/sprite.svg#arrow-right-active");
+  background: url("./img/sprite.svg#arrow-right-active");
 }
 
 .gallery__swiper-button--prev.gallery__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .gallery__swiper-button--next.gallery__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .gallery__swiper {
@@ -3506,8 +3506,8 @@ button,
   padding-top: 312px;
   padding-bottom: 307px;
   text-align: center;
-  background-image: -webkit-image-set(url("/img/feedback.webp") type("image/webp"), url("/img/feedback.png") type("image/png"));
-  background-image: image-set(url("/img/feedback.webp") type("image/webp"), url("/img/feedback.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/feedback.webp") type("image/webp"), url("./img/feedback.png") type("image/png"));
+  background-image: image-set(url("./img/feedback.webp") type("image/webp"), url("./img/feedback.png") type("image/png"));
   background-size: 1440px 800px;
 }
 
@@ -3621,15 +3621,15 @@ button,
 }
 
 .contacts__item--phone {
-  background: url("/img/sprite.svg#phone") no-repeat left center/26px 26px;
+  background: url("./img/sprite.svg#phone") no-repeat left center/26px 26px;
 }
 
 .contacts__item--email {
-  background: url("/img/sprite.svg#mail") no-repeat left center/26px 26px;
+  background: url("./img/sprite.svg#mail") no-repeat left center/26px 26px;
 }
 
 .contacts__item--adress {
-  background: url("/img/sprite.svg#pin-stroke") no-repeat left center/26px 26px;
+  background: url("./img/sprite.svg#pin-stroke") no-repeat left center/26px 26px;
 }
 
 .contacts__item h3 {
@@ -3666,8 +3666,8 @@ button,
   margin-top: 75px;
   width: 585px;
   height: 324px;
-  background-image: -webkit-image-set(url("/img/map.webp") type("image/webp"), url("/img/map.png") type("image/png"));
-  background-image: image-set(url("/img/map.webp") type("image/webp"), url("/img/map.png") type("image/png"));
+  background-image: -webkit-image-set(url("./img/map.webp") type("image/webp"), url("./img/map.png") type("image/png"));
+  background-image: image-set(url("./img/map.webp") type("image/webp"), url("./img/map.png") type("image/png"));
   background-size: 585px 324px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -3794,42 +3794,42 @@ button,
 }
 
 .footer__social-link--vk {
-  background: url("/img/sprite.svg#vk") no-repeat center/30px 30px;
+  background: url("./img/sprite.svg#vk") no-repeat center/30px 30px;
 }
 
 .footer__social-link--vk:hover,
 .footer__social-link--vk:focus {
-  background-image: url("/img/sprite.svg#vk-hover");
+  background-image: url("./img/sprite.svg#vk-hover");
 }
 
 .footer__social-link--vk:active {
-  background-image: url("/img/sprite.svg#vk-active");
+  background-image: url("./img/sprite.svg#vk-active");
 }
 
 .footer__social-link--ok {
-  background: url("/img/sprite.svg#ok") no-repeat center/30px 30px;
+  background: url("./img/sprite.svg#ok") no-repeat center/30px 30px;
 }
 
 .footer__social-link--ok:hover,
 .footer__social-link--ok:focus {
-  background-image: url("/img/sprite.svg#ok-hover");
+  background-image: url("./img/sprite.svg#ok-hover");
 }
 
 .footer__social-link--ok:active {
-  background-image: url("/img/sprite.svg#ok-active");
+  background-image: url("./img/sprite.svg#ok-active");
 }
 
 .footer__social-link--reddit {
-  background: url("/img/sprite.svg#reddit") no-repeat center/30px 30px;
+  background: url("./img/sprite.svg#reddit") no-repeat center/30px 30px;
 }
 
 .footer__social-link--reddit:hover,
 .footer__social-link--reddit:focus {
-  background-image: url("/img/sprite.svg#reddit-hover");
+  background-image: url("./img/sprite.svg#reddit-hover");
 }
 
 .footer__social-link--reddit:active {
-  background-image: url("/img/sprite.svg#reddit-active");
+  background-image: url("./img/sprite.svg#reddit-active");
 }
 
 .footer__privacy {
@@ -3921,7 +3921,7 @@ button,
     display: flex;
     width: 26px;
     height: 26px;
-    background: url("../../img/sprite/burger-icon.svg") no-repeat center/26px 26px;
+    background: url("./img/sprite/burger-icon.svg") no-repeat center/26px 26px;
   }
 
   .header__phone-link {
@@ -4129,18 +4129,18 @@ button,
   }
 
   .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-1-tablet.webp") type("image/webp"), url("./img/tour/tour-1-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-1-tablet.webp") type("image/webp"), url("./img/tour/tour-1-tablet.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-2-tablet.webp") type("image/webp"), url("./img/tour/tour-2-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-2-tablet.webp") type("image/webp"), url("./img/tour/tour-2-tablet.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("/../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-3-tablet.webp") type("image/webp"), url("./img/tour/tour-3-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-3-tablet.webp") type("image/webp"), url("./img/tour/tour-3-tablet.png") type("image/png"));
   }
 
   .tour__info {
@@ -4275,14 +4275,14 @@ button,
     top: 54px;
     width: 368px;
     height: 68px;
-    background-image: url("/img/sprite.svg#training-figure");
+    background-image: url("./img/sprite.svg#training-figure");
     background-repeat: no-repeat;
     background-size: 368px 68px;
   }
 
   .about {
-    background-image: -webkit-image-set(url("/img/about/about-tablet.webp") type("image/webp"), url("/img/about/about-tablet.png") type("image/png"));
-    background-image: image-set(url("/img/about/about-tablet.webp") type("image/webp"), url("/img/about/about-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/about/about-tablet.webp") type("image/webp"), url("./img/about/about-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/about/about-tablet.webp") type("image/webp"), url("./img/about/about-tablet.png") type("image/png"));
     background-size: 475px 402px;
     background-position: 0 57px;
   }
@@ -4658,23 +4658,23 @@ button,
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1199px) and (min-resolution: 1.5dppx) {
   .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-1-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-1-tablet@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-2-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-2-tablet@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-3-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("./img/tour/tour-3-tablet@2x.png") type("image/png"));
   }
 
   .about {
-    background-image: -webkit-image-set(url("/img/about/about-tablet@2x.webp") type("image/webp"), url("/img/about/about-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("/img/about/about-tablet@2x.webp") type("image/webp"), url("/img/about/about-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/about/about-tablet@2x.webp") type("image/webp"), url("./img/about/about-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/about/about-tablet@2x.webp") type("image/webp"), url("./img/about/about-tablet@2x.png") type("image/png"));
   }
 }
 
@@ -4690,52 +4690,52 @@ button,
 
 @media (max-width: 768px) {
   .hero__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/img/hero/caucasus-tablet.webp") type("image/webp"), url("/img/hero/caucasus-tablet.png") type("image/png"));
-    background-image: image-set(url("/img/hero/caucasus-tablet.webp") type("image/webp"), url("/img/hero/caucasus-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/caucasus-tablet.webp") type("image/webp"), url("./img/hero/caucasus-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/hero/caucasus-tablet.webp") type("image/webp"), url("./img/hero/caucasus-tablet.png") type("image/png"));
     background-size: 768px 1024px;
     background-repeat: no-repeat;
   }
 
   .hero__swiper-slide--kamchatka {
-    background-image: -webkit-image-set(url("/img/hero/kamchatka-tablet.webp") type("image/webp"), url("/img/hero/kamchatka-tablet.png") type("image/png"));
-    background-image: image-set(url("/img/hero/kamchatka-tablet.webp") type("image/webp"), url("/img/hero/kamchatka-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/kamchatka-tablet.webp") type("image/webp"), url("./img/hero/kamchatka-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/hero/kamchatka-tablet.webp") type("image/webp"), url("./img/hero/kamchatka-tablet.png") type("image/png"));
     background-size: 768px 1024px;
     background-repeat: no-repeat;
   }
 
   .hero__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/img/hero/altai-tablet.webp") type("image/webp"), url("/img/hero/altai-tablet.png") type("image/png"));
-    background-image: image-set(url("/img/hero/altai-tablet.webp") type("image/webp"), url("/img/hero/altai-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/altai-tablet.webp") type("image/webp"), url("./img/hero/altai-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/hero/altai-tablet.webp") type("image/webp"), url("./img/hero/altai-tablet.png") type("image/png"));
     background-size: 768px 1024px;
     background-repeat: no-repeat;
   }
 
   .feedback .container {
-    background-image: -webkit-image-set(url("/img/feedback-tablet.webp") type("image/webp"), url("/img/feedback-tablet.png") type("image/png"));
-    background-image: image-set(url("/img/feedback-tablet.webp") type("image/webp"), url("/img/feedback-tablet.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/feedback-tablet.webp") type("image/webp"), url("./img/feedback-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-tablet.webp") type("image/webp"), url("./img/feedback-tablet.png") type("image/png"));
     background-size: 768px 679px;
   }
 }
 
 @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 768px) and (min-resolution: 1.5dppx) {
   .hero__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/img/hero/caucasus-tablet@2x.webp") type("image/webp"), url("/img/hero/caucasus-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/caucasus-tablet@2x.webp") type("image/webp"), url("/img/hero/caucasus-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/caucasus-tablet@2x.webp") type("image/webp"), url("./img/hero/caucasus-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/caucasus-tablet@2x.webp") type("image/webp"), url("./img/hero/caucasus-tablet@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--kamchatka {
-    background-image: -webkit-image-set(url("/img/hero/kamchatka-tablet@2x.webp") type("image/webp"), url("/img/hero/kamchatka-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/kamchatka-tablet@2x.webp") type("image/webp"), url("/img/hero/kamchatka-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/kamchatka-tablet@2x.webp") type("image/webp"), url("./img/hero/kamchatka-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/kamchatka-tablet@2x.webp") type("image/webp"), url("./img/hero/kamchatka-tablet@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/img/hero/altai-tablet@2x.webp") type("image/webp"), url("/img/hero/altai-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/altai-tablet@2x.webp") type("image/webp"), url("/img/hero/altai-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/altai-tablet@2x.webp") type("image/webp"), url("./img/hero/altai-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/altai-tablet@2x.webp") type("image/webp"), url("./img/hero/altai-tablet@2x.png") type("image/png"));
   }
 
   .feedback .container {
-    background-image: -webkit-image-set(url("/img/feedback-tablet@2x.webp") type("image/webp"), url("/img/feedback-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("/img/feedback-tablet@2x.webp") type("image/webp"), url("/img/feedback-tablet@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/feedback-tablet@2x.webp") type("image/webp"), url("./img/feedback-tablet@2x.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-tablet@2x.webp") type("image/webp"), url("./img/feedback-tablet@2x.png") type("image/png"));
   }
 }
 
@@ -4911,18 +4911,18 @@ button,
   }
 
   .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-1-mobile.webp") type("image/webp"), url("./img/tour/tour-1-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-1-mobile.webp") type("image/webp"), url("./img/tour/tour-1-mobile.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-2-mobile.webp") type("image/webp"), url("./img/tour/tour-2-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-2-mobile.webp") type("image/webp"), url("./img/tour/tour-2-mobile.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("/../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
-    background-image: image-set(url("/../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-3-mobile.webp") type("image/webp"), url("./img/tour/tour-3-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-3-mobile.webp") type("image/webp"), url("./img/tour/tour-3-mobile.png") type("image/png"));
   }
 
   .tour__info {
@@ -5596,18 +5596,18 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-1-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-1-mobile@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-2-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-2-mobile@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-3-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("./img/tour/tour-3-mobile@2x.png") type("image/png"));
   }
 }
 
@@ -5645,52 +5645,52 @@ button,
 
 @media (max-width: 320px) {
   .hero__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/img/hero/caucasus-mobile.webp") type("image/webp"), url("/img/hero/caucasus-mobile.png") type("image/png"));
-    background-image: image-set(url("/img/hero/caucasus-mobile.webp") type("image/webp"), url("/img/hero/caucasus-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/caucasus-mobile.webp") type("image/webp"), url("./img/hero/caucasus-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/hero/caucasus-mobile.webp") type("image/webp"), url("./img/hero/caucasus-mobile.png") type("image/png"));
     background-size: 320px 568px;
     background-repeat: no-repeat;
   }
 
   .hero__swiper-slide--kamchatka {
-    background-image: -webkit-image-set(url("/img/hero/kamchatka-mobile.webp") type("image/webp"), url("/img/hero/kamchatka-mobile.png") type("image/png"));
-    background-image: image-set(url("/img/hero/kamchatka-mobile.webp") type("image/webp"), url("/img/hero/kamchatka-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/kamchatka-mobile.webp") type("image/webp"), url("./img/hero/kamchatka-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/hero/kamchatka-mobile.webp") type("image/webp"), url("./img/hero/kamchatka-mobile.png") type("image/png"));
     background-size: 320px 568px;
     background-repeat: no-repeat;
   }
 
   .hero__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/img/hero/altai-mobile.webp") type("image/webp"), url("/img/hero/altai-mobile.png") type("image/png"));
-    background-image: image-set(url("/img/hero/altai-mobile.webp") type("image/webp"), url("/img/hero/altai-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/altai-mobile.webp") type("image/webp"), url("./img/hero/altai-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/hero/altai-mobile.webp") type("image/webp"), url("./img/hero/altai-mobile.png") type("image/png"));
     background-size: 320px 568px;
     background-repeat: no-repeat;
   }
 
   .feedback .container {
-    background-image: -webkit-image-set(url("/img/feedback-mobile.webp") type("image/webp"), url("/img/feedback-mobile.png") type("image/png"));
-    background-image: image-set(url("/img/feedback-mobile.webp") type("image/webp"), url("/img/feedback-mobile.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/feedback-mobile.webp") type("image/webp"), url("./img/feedback-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-mobile.webp") type("image/webp"), url("./img/feedback-mobile.png") type("image/png"));
     background-size: 320px 621px;
   }
 }
 
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 320px) and (min-resolution: 1.5dppx) {
   .hero__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/img/hero/caucasus-mobile@2x.webp") type("image/webp"), url("/img/hero/caucasus-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/caucasus-mobile@2x.webp") type("image/webp"), url("/img/hero/caucasus-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/caucasus-mobile@2x.webp") type("image/webp"), url("./img/hero/caucasus-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/caucasus-mobile@2x.webp") type("image/webp"), url("./img/hero/caucasus-mobile@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--kamchatka {
-    background-image: -webkit-image-set(url("/img/hero/kamchatka-mobile@2x.webp") type("image/webp"), url("/img/hero/kamchatka-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/kamchatka-mobile@2x.webp") type("image/webp"), url("/img/hero/kamchatka-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/kamchatka-mobile@2x.webp") type("image/webp"), url("./img/hero/kamchatka-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/kamchatka-mobile@2x.webp") type("image/webp"), url("./img/hero/kamchatka-mobile@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/img/hero/altai-mobile@2x.webp") type("image/webp"), url("/img/hero/altai-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/altai-mobile@2x.webp") type("image/webp"), url("/img/hero/altai-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/altai-mobile@2x.webp") type("image/webp"), url("./img/hero/altai-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/altai-mobile@2x.webp") type("image/webp"), url("./img/hero/altai-mobile@2x.png") type("image/png"));
   }
 
   .feedback .container {
-    background-image: -webkit-image-set(url("/img/feedback-mobile@2x.webp") type("image/webp"), url("/img/feedback-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("/img/feedback-mobile@2x.webp") type("image/webp"), url("/img/feedback-mobile@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/feedback-mobile@2x.webp") type("image/webp"), url("./img/feedback-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-mobile@2x.webp") type("image/webp"), url("./img/feedback-mobile@2x.png") type("image/png"));
   }
 }
 
@@ -5710,77 +5710,77 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .hero__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("/img/hero/caucasus@2x.webp") type("image/webp"), url("/img/hero/caucasus@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/caucasus@2x.webp") type("image/webp"), url("/img/hero/caucasus@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/caucasus@2x.webp") type("image/webp"), url("./img/hero/caucasus@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/caucasus@2x.webp") type("image/webp"), url("./img/hero/caucasus@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--kamchatka {
-    background-image: -webkit-image-set(url("/img/hero/kamchatka@2x.webp") type("image/webp"), url("/img/hero/kamchatka@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/kamchatka@2x.webp") type("image/webp"), url("/img/hero/kamchatka@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/kamchatka@2x.webp") type("image/webp"), url("./img/hero/kamchatka@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/kamchatka@2x.webp") type("image/webp"), url("./img/hero/kamchatka@2x.png") type("image/png"));
   }
 
   .hero__swiper-slide--altai {
-    background-image: -webkit-image-set(url("/img/hero/altai@2x.webp") type("image/webp"), url("/img/hero/altai@2x.png") type("image/png"));
-    background-image: image-set(url("/img/hero/altai@2x.webp") type("image/webp"), url("/img/hero/altai@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/hero/altai@2x.webp") type("image/webp"), url("./img/hero/altai@2x.png") type("image/png"));
+    background-image: image-set(url("./img/hero/altai@2x.webp") type("image/webp"), url("./img/hero/altai@2x.png") type("image/png"));
   }
 
   .tour {
-    background-image: -webkit-image-set(url("/img/clouds@2x.webp") type("image/webp"), url("/img/clouds@2x.png") type("image/png"));
-    background-image: image-set(url("/img/clouds@2x.webp") type("image/webp"), url("/img/clouds@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/clouds@2x.webp") type("image/webp"), url("./img/clouds@2x.png") type("image/png"));
+    background-image: image-set(url("./img/clouds@2x.webp") type("image/webp"), url("./img/clouds@2x.png") type("image/png"));
   }
 
   .tour .container {
-    background-image: -webkit-image-set(url("/img/tour-little-cloud@2x.webp") type("image/webp"), url("/img/tour-little-cloud@2x.png") type("image/png"));
-    background-image: image-set(url("/img/tour-little-cloud@2x.webp") type("image/webp"), url("/img/tour-little-cloud@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour-little-cloud@2x.webp") type("image/webp"), url("./img/tour-little-cloud@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour-little-cloud@2x.webp") type("image/webp"), url("./img/tour-little-cloud@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"), url("../img/tour/tour-1@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"), url("../img/tour/tour-1@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-1@2x.webp") type("image/webp"), url("./img/tour/tour-1@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-1@2x.webp") type("image/webp"), url("./img/tour/tour-1@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"), url("../img/tour/tour-2@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"), url("../img/tour/tour-2@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-2@2x.webp") type("image/webp"), url("./img/tour/tour-2@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-2@2x.webp") type("image/webp"), url("./img/tour/tour-2@2x.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/tour/tour-3@2x.webp") type("image/webp"), url("./img/tour/tour-3@2x.png") type("image/png"));
+    background-image: image-set(url("./img/tour/tour-3@2x.webp") type("image/webp"), url("./img/tour/tour-3@2x.png") type("image/png"));
   }
 
   .training {
-    background-image: -webkit-image-set(url("/img/clouds@2x.webp") type("image/webp"), url("/img/clouds@2x.png") type("image/png"));
-    background-image: image-set(url("/img/clouds@2x.webp") type("image/webp"), url("/img/clouds@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/clouds@2x.webp") type("image/webp"), url("./img/clouds@2x.png") type("image/png"));
+    background-image: image-set(url("./img/clouds@2x.webp") type("image/webp"), url("./img/clouds@2x.png") type("image/png"));
   }
 
   .about {
-    background-image: -webkit-image-set(url("/img/about/about@2x.webp") type("image/webp"), url("/img/about/about@2x.png") type("image/png"));
-    background-image: image-set(url("/img/about/about@2x.webp") type("image/webp"), url("/img/about/about@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/about/about@2x.webp") type("image/webp"), url("./img/about/about@2x.png") type("image/png"));
+    background-image: image-set(url("./img/about/about@2x.webp") type("image/webp"), url("./img/about/about@2x.png") type("image/png"));
   }
 
   .reviews .container {
-    background-image: -webkit-image-set(url("/img/review-cloud@2x.webp") type("image/webp"), url("/img/review-cloud@2x.png") type("image/png"));
-    background-image: image-set(url("/img/review-cloud@2x.webp") type("image/webp"), url("/img/review-cloud@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/review-cloud@2x.webp") type("image/webp"), url("./img/review-cloud@2x.png") type("image/png"));
+    background-image: image-set(url("./img/review-cloud@2x.webp") type("image/webp"), url("./img/review-cloud@2x.png") type("image/png"));
   }
 
   .advantages .container {
-    background-image: -webkit-image-set(url("/img/review-cloud@2x.webp") type("image/webp"), url("/img/review-cloud@2x.png") type("image/png"));
-    background-image: image-set(url("/img/review-cloud@2x.webp") type("image/webp"), url("/img/review-cloud@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/review-cloud@2x.webp") type("image/webp"), url("./img/review-cloud@2x.png") type("image/png"));
+    background-image: image-set(url("./img/review-cloud@2x.webp") type("image/webp"), url("./img/review-cloud@2x.png") type("image/png"));
   }
 
   .advantages .container::after {
-    background-image: -webkit-image-set(url("/img/advantage-cloud@2x.webp") type("image/webp"), url("/img/advantage-cloud@2x.png") type("image/png"));
-    background-image: image-set(url("/img/advantage-cloud@2x.webp") type("image/webp"), url("/img/advantage-cloud@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/advantage-cloud@2x.webp") type("image/webp"), url("./img/advantage-cloud@2x.png") type("image/png"));
+    background-image: image-set(url("./img/advantage-cloud@2x.webp") type("image/webp"), url("./img/advantage-cloud@2x.png") type("image/png"));
   }
 
   .feedback .container {
-    background-image: -webkit-image-set(url("/img/feedback@2x.webp") type("image/webp"), url("/img/feedback@2x.png") type("image/png"));
-    background-image: image-set(url("/img/feedback@2x.webp") type("image/webp"), url("/img/feedback@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/feedback@2x.webp") type("image/webp"), url("./img/feedback@2x.png") type("image/png"));
+    background-image: image-set(url("./img/feedback@2x.webp") type("image/webp"), url("./img/feedback@2x.png") type("image/png"));
   }
 
   .contacts__map {
-    background-image: -webkit-image-set(url("/img/map@2x.webp") type("image/webp"), url("/img/map@2x.png") type("image/png"));
-    background-image: image-set(url("/img/map@2x.webp") type("image/webp"), url("/img/map@2x.png") type("image/png"));
+    background-image: -webkit-image-set(url("./img/map@2x.webp") type("image/webp"), url("./img/map@2x.png") type("image/png"));
+    background-image: image-set(url("./img/map@2x.webp") type("image/webp"), url("./img/map@2x.png") type("image/png"));
   }
 }
