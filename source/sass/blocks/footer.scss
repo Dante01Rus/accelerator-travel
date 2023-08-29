@@ -167,41 +167,41 @@
   height: 30px;
 
   &--vk {
-    background: url("/img/sprite.svg#vk") no-repeat center / 30px 30px;
+    background: url("./img/sprite.svg#vk") no-repeat center / 30px 30px;
 
     &:hover,
     &:focus {
-      background-image: url("/img/sprite.svg#vk-hover");
+      background-image: url("./img/sprite.svg#vk-hover");
     }
 
     &:active {
-      background-image: url("/img/sprite.svg#vk-active");
+      background-image: url("./img/sprite.svg#vk-active");
     }
   }
 
   &--ok {
-    background: url("/img/sprite.svg#ok") no-repeat center / 30px 30px;
+    background: url("./img/sprite.svg#ok") no-repeat center / 30px 30px;
 
     &:hover,
     &:focus {
-      background-image: url("/img/sprite.svg#ok-hover");
+      background-image: url("./img/sprite.svg#ok-hover");
     }
 
     &:active {
-      background-image: url("/img/sprite.svg#ok-active");
+      background-image: url("./img/sprite.svg#ok-active");
     }
   }
 
   &--reddit {
-    background: url("/img/sprite.svg#reddit") no-repeat center / 30px 30px;
+    background: url("./img/sprite.svg#reddit") no-repeat center / 30px 30px;
 
     &:hover,
     &:focus {
-      background-image: url("/img/sprite.svg#reddit-hover");
+      background-image: url("./img/sprite.svg#reddit-hover");
     }
 
     &:active {
-      background-image: url("/img/sprite.svg#reddit-active");
+      background-image: url("./img/sprite.svg#reddit-active");
     }
   }
 }

@@ -2,13 +2,13 @@
   padding-top: 312px;
   padding-bottom: 307px;
   text-align: center;
-  background-image: image-set(url("/img/feedback.webp") type("image/webp"),
-      url("/img/feedback.png") type("image/png"));
+  background-image: image-set(url("./img/feedback.webp") type("image/webp"),
+      url("./img/feedback.png") type("image/png"));
   background-size: 1440px 800px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("/img/feedback@2x.webp") type("image/webp"),
-        url("/img/feedback@2x.png") type("image/png"));
+    background-image: image-set(url("./img/feedback@2x.webp") type("image/webp"),
+        url("./img/feedback@2x.png") type("image/png"));
   }
 
   @include vp-1199 {
@@ -18,13 +18,13 @@
   }
 
   @media (max-width: $vp-768) {
-    background-image: image-set(url("/img/feedback-tablet.webp") type("image/webp"),
-        url("/img/feedback-tablet.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-tablet.webp") type("image/webp"),
+        url("./img/feedback-tablet.png") type("image/png"));
     background-size: 768px 679px;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("/img/feedback-tablet@2x.webp") type("image/webp"),
-          url("/img/feedback-tablet@2x.png") type("image/png"));
+      background-image: image-set(url("./img/feedback-tablet@2x.webp") type("image/webp"),
+          url("./img/feedback-tablet@2x.png") type("image/png"));
     }
   }
 
@@ -35,13 +35,13 @@
   }
 
   @media (max-width: $vp-320) {
-    background-image: image-set(url("/img/feedback-mobile.webp") type("image/webp"),
-        url("/img/feedback-mobile.png") type("image/png"));
+    background-image: image-set(url("./img/feedback-mobile.webp") type("image/webp"),
+        url("./img/feedback-mobile.png") type("image/png"));
     background-size: 320px 621px;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("/img/feedback-mobile@2x.webp") type("image/webp"),
-          url("/img/feedback-mobile@2x.png") type("image/png"));
+      background-image: image-set(url("./img/feedback-mobile@2x.webp") type("image/webp"),
+          url("./img/feedback-mobile@2x.png") type("image/png"));
     }
   }
 }

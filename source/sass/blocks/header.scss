@@ -72,7 +72,7 @@
     display: flex;
     width: 26px;
     height: 26px;
-    background: url("../../img/sprite/burger-icon.svg") no-repeat center / 26px 26px;
+    background: url("./img/sprite/burger-icon.svg") no-repeat center / 26px 26px;
   }
 
   @include vp-767 {
@@ -123,7 +123,7 @@
 .header__menu-opened .header__burger-btn {
   width: 22px;
   height: 22px;
-  background: url("../../img/sprite/close-icon.svg") no-repeat center / 22px 22px;
+  background: url("./img/sprite/close-icon.svg") no-repeat center / 22px 22px;
 }
 
 .header__menu-opened .header__phone-link {

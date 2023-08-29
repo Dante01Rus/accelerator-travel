@@ -3,15 +3,15 @@
   padding-top: 46px;
   padding-bottom: 66px;
   overflow: hidden;
-  background-image: image-set(url("/img/review-cloud.webp") type("image/webp"),
-      url("/img/review-cloud.png") type("image/png"));
+  background-image: image-set(url("./img/review-cloud.webp") type("image/webp"),
+      url("./img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left -190px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("/img/review-cloud@2x.webp") type("image/webp"),
-        url("/img/review-cloud@2x.png") type("image/png"));
+    background-image: image-set(url("./img/review-cloud@2x.webp") type("image/webp"),
+        url("./img/review-cloud@2x.png") type("image/png"));
   }
 
   &::after {
@@ -22,15 +22,15 @@
     width: 602px;
     height: 263px;
     z-index: 0;
-    background-image: image-set(url("/img/advantage-cloud.webp") type("image/webp"),
-        url("/img/advantage-cloud.png") type("image/png"));
+    background-image: image-set(url("./img/advantage-cloud.webp") type("image/webp"),
+        url("./img/advantage-cloud.png") type("image/png"));
     background-repeat: no-repeat;
     background-size: 705px 391px;
     background-position: center;
 
     @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("/img/advantage-cloud@2x.webp") type("image/webp"),
-          url("/img/advantage-cloud@2x.png") type("image/png"));
+      background-image: image-set(url("./img/advantage-cloud@2x.webp") type("image/webp"),
+          url("./img/advantage-cloud@2x.png") type("image/png"));
     }
   }
 
@@ -104,38 +104,38 @@
   cursor: pointer;
 
   &--prev {
-    background: url("/img/sprite.svg#arrow-left");
+    background: url("./img/sprite.svg#arrow-left");
 
     &:hover,
     &:focus-visible {
-      background: url("/img/sprite.svg#arrow-left-hf");
+      background: url("./img/sprite.svg#arrow-left-hf");
     }
 
     &:active {
-      background: url("/img/sprite.svg#arrow-left-active");
+      background: url("./img/sprite.svg#arrow-left-active");
     }
   }
 
   &--next {
-    background: url("/img/sprite.svg#arrow-right");
+    background: url("./img/sprite.svg#arrow-right");
 
     &:hover,
     &:focus-visible {
-      background: url("/img/sprite.svg#arrow-right-hf");
+      background: url("./img/sprite.svg#arrow-right-hf");
     }
 
     &:active {
-      background: url("/img/sprite.svg#arrow-right-active");
+      background: url("./img/sprite.svg#arrow-right-active");
     }
   }
 }
 
 .advantages__swiper-button--prev.advantages__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .advantages__swiper-button--next.advantages__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .advantages__swiper {

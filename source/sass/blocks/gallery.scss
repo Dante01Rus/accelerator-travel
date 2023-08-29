@@ -99,38 +99,38 @@
   cursor: pointer;
 
   &--prev {
-    background: url("/img/sprite.svg#arrow-left");
+    background: url("./img/sprite.svg#arrow-left");
 
     &:hover,
     &:focus-visible {
-      background: url("/img/sprite.svg#arrow-left-hf");
+      background: url("./img/sprite.svg#arrow-left-hf");
     }
 
     &:active {
-      background: url("/img/sprite.svg#arrow-left-active");
+      background: url("./img/sprite.svg#arrow-left-active");
     }
   }
 
   &--next {
-    background: url("/img/sprite.svg#arrow-right");
+    background: url("./img/sprite.svg#arrow-right");
 
     &:hover,
     &:focus-visible {
-      background: url("/img/sprite.svg#arrow-right-hf");
+      background: url("./img/sprite.svg#arrow-right-hf");
     }
 
     &:active {
-      background: url("/img/sprite.svg#arrow-right-active");
+      background: url("./img/sprite.svg#arrow-right-active");
     }
   }
 }
 
 .gallery__swiper-button--prev.gallery__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-left-disabled");
+  background: url("./img/sprite.svg#arrow-left-disabled");
 }
 
 .gallery__swiper-button--next.gallery__swiper-button--disabled {
-  background: url("/img/sprite.svg#arrow-right-disabled");
+  background: url("./img/sprite.svg#arrow-right-disabled");
 }
 
 .gallery__swiper {
