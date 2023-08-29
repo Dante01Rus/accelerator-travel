@@ -4637,6 +4637,14 @@ button,
     background-image: -webkit-image-set(url("../img/about/about-tablet@2x.webp") type("image/webp"), url("../img/about/about-tablet@2x.png") type("image/png"));
     background-image: image-set(url("../img/about/about-tablet@2x.webp") type("image/webp"), url("../img/about/about-tablet@2x.png") type("image/png"));
   }
+
+  .reviews .container {
+    background: none;
+  }
+
+  .advantages .container {
+    background: none;
+  }
 }
 
 @media (max-width: 1199px) and (max-width: 1199px) {
