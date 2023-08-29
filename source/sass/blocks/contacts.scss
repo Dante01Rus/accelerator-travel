@@ -101,15 +101,15 @@
   padding-left: 56px;
 
   &--phone {
-    background: url("./img/sprite.svg#phone") no-repeat left center / 26px 26px;
+    background: url("../img/sprite.svg#phone") no-repeat left center / 26px 26px;
   }
 
   &--email {
-    background: url("./img/sprite.svg#mail") no-repeat left center / 26px 26px;
+    background: url("../img/sprite.svg#mail") no-repeat left center / 26px 26px;
   }
 
   &--adress {
-    background: url("./img/sprite.svg#pin-stroke") no-repeat left center / 26px 26px;
+    background: url("../img/sprite.svg#pin-stroke") no-repeat left center / 26px 26px;
   }
 
   @include vp-1199 {
@@ -180,15 +180,15 @@
   margin-top: 75px;
   width: 585px;
   height: 324px;
-  background-image: image-set(url("./img/map.webp") type("image/webp"),
-      url("./img/map.png") type("image/png"));
+  background-image: image-set(url("../img/map.webp") type("image/webp"),
+      url("../img/map.png") type("image/png"));
   background-size: 585px 324px;
   background-position: center center;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("./img/map@2x.webp") type("image/webp"),
-        url("./img/map@2x.png") type("image/png"));
+    background-image: image-set(url("../img/map@2x.webp") type("image/webp"),
+        url("../img/map@2x.png") type("image/png"));
   }
 
   @include vp-1199 {

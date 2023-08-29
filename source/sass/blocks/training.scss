@@ -1,14 +1,25 @@
 .training {
+  position: relative;
   margin-top: -1px;
-  background-image: image-set(url("./img/clouds.webp") type("image/webp"),
-      url("./img/clouds.png") type("image/png"));
+  background-image: image-set(url("../img/clouds.webp") type("image/webp"),
+      url("../img/clouds.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 602px 1364px;
   background-position: right -811px;
 
   @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("./img/clouds@2x.webp") type("image/webp"),
-        url("./img/clouds@2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"),
+        url("../img/clouds@2x.png") type("image/png"));
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-navy-blue;
   }
 
   @include vp-1199 {
@@ -25,20 +36,10 @@
   position: relative;
   padding-top: 24px;
   padding-bottom: 41px;
-  background-image: url("./img/sprite.svg#training-line");
+  background-image: url("../img/sprite.svg#training-line");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% 15px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 6px;
-    width: 100vw;
-    height: 1px;
-    background-color: $color-navy-blue;
-  }
 
   @include vp-1199 {
     padding-bottom: 40px;
@@ -146,38 +147,38 @@
   cursor: pointer;
 
   &--prev {
-    background: url("./img/sprite.svg#arrow-left");
+    background: url("../img/sprite.svg#arrow-left");
 
     &:hover,
     &:focus-visible {
-      background: url("./img/sprite.svg#arrow-left-hf");
+      background: url("../img/sprite.svg#arrow-left-hf");
     }
 
     &:active {
-      background: url("./img/sprite.svg#arrow-left-active");
+      background: url("../img/sprite.svg#arrow-left-active");
     }
   }
 
   &--next {
-    background: url("./img/sprite.svg#arrow-right");
+    background: url("../img/sprite.svg#arrow-right");
 
     &:hover,
     &:focus-visible {
-      background: url("./img/sprite.svg#arrow-right-hf");
+      background: url("../img/sprite.svg#arrow-right-hf");
     }
 
     &:active {
-      background: url("./img/sprite.svg#arrow-right-active");
+      background: url("../img/sprite.svg#arrow-right-active");
     }
   }
 }
 
 .training__swiper-button--prev.training__swiper-button--disabled {
-  background: url("./img/sprite.svg#arrow-left-disabled");
+  background: url("../img/sprite.svg#arrow-left-disabled");
 }
 
 .training__swiper-button--next.training__swiper-button--disabled {
-  background: url("./img/sprite.svg#arrow-right-disabled");
+  background: url("../img/sprite.svg#arrow-right-disabled");
 }
 
 .training__swiper {
@@ -185,7 +186,7 @@
   position: relative;
   margin-bottom: -9px;
   top: -30px;
-  left: calc((100vw - 60px - 240px - 1200px) / 2);
+  left: calc(((100% + 240px) - 60px - 240px - 1200px) / 2);
   width: 1260px;
 
   @include vp-1199 {
@@ -245,16 +246,16 @@
   right: -1px;
   width: 24px;
   height: 24px;
-  background: url("./img/sprite.svg#vk") no-repeat;
+  background: url("../img/sprite.svg#vk") no-repeat;
   cursor: pointer;
 
   &:hover,
   &:focus-visible {
-    background: url("./img/sprite.svg#vk-hover") no-repeat;
+    background: url("../img/sprite.svg#vk-hover") no-repeat;
   }
 
   &:active {
-    background: url("./img/sprite.svg#vk-active") no-repeat;
+    background: url("../img/sprite.svg#vk-active") no-repeat;
   }
 
   @include vp-767 {
@@ -323,19 +324,19 @@
   overflow: visible;
 
   &--map {
-    background: url("./img/sprite.svg#map") no-repeat left 10px / 25px 25px;
+    background: url("../img/sprite.svg#map") no-repeat left 10px / 25px 25px;
   }
 
   &--boots {
-    background: url("./img/sprite.svg#boots") no-repeat 1px 11px / 24px 24px;
+    background: url("../img/sprite.svg#boots") no-repeat 1px 11px / 24px 24px;
   }
 
   &--tree {
-    background: url("./img/sprite.svg#pine-tree") no-repeat left 12px / 23px 23px;
+    background: url("../img/sprite.svg#pine-tree") no-repeat left 12px / 23px 23px;
   }
 
   &--mountain {
-    background: url("./img/sprite.svg#mountain") no-repeat 2px 11px / 25px 25px;
+    background: url("../img/sprite.svg#mountain") no-repeat 2px 11px / 25px 25px;
   }
 
   @include vp-1199 {
@@ -409,7 +410,7 @@
     top: 54px;
     width: 368px;
     height: 68px;
-    background-image: url("./img/sprite.svg#training-figure");
+    background-image: url("../img/sprite.svg#training-figure");
     background-repeat: no-repeat;
     background-size: 368px 68px;
   }

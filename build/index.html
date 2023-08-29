@@ -947,21 +947,21 @@
         <div class="container">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
-          <form action="https://echo.htmlacademy.ru/." method="get">
-            <div class="feedback__name" data-validate-type="text" data-limitation="name" data-on-input-validate
-              data-required>
-              <label>
-                <input type="text" name="name" minlength="1" placeholder="Как к вам обращаться?" required
-                  autocomplete="off">
-              </label>
-            </div>
-            <div class="feedback__phone" data-validate-type="phone" data-on-input-validate data-required>
-              <label>
-                <input type="text" name="phone" placeholder="Телефон" required autocomplete="off">
-              </label>
-            </div>
-            <button class="feedback__submit btn">Отправить</button>
-          </form>
+          <div class="form-contacts__form form" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru/." method="get">
+              <div class="feedback__name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+                <label>
+                  <input type="text" name="name" minlength="1" placeholder="Как к вам обращаться?" required autocomplete="off">
+                </label>
+              </div>
+              <div class="feedback__phone" data-validate-type="phone" data-on-input-validate data-required data-matrix="___________">
+                <label>
+                  <input type="text" name="phone" placeholder="Телефон" required autocomplete="off">
+                </label>
+              </div>
+              <button class="feedback__submit btn">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
 

@@ -93,7 +93,7 @@
   position: relative;
   margin: 0 0 52px;
   width: 1200px;
-  left: calc((100vw - 1440px) / 2);
+  left: calc((100% + 240px - 1440px) / 2);
 
   @include vp-1199 {
     position: static;

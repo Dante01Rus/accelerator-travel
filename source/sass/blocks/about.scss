@@ -1,7 +1,7 @@
 .about {
   background-image: image-set(
-    url("./img/about/about.webp") type("image/webp"),
-    url("./img/about/about.png") type("image/png")
+    url("../img/about/about.webp") type("image/webp"),
+    url("../img/about/about.png") type("image/png")
   );
   background-repeat: no-repeat;
   background-position: left 88px;
@@ -9,23 +9,23 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: image-set(
-      url("./img/about/about@2x.webp") type("image/webp"),
-      url("./img/about/about@2x.png") type("image/png")
+      url("../img/about/about@2x.webp") type("image/webp"),
+      url("../img/about/about@2x.png") type("image/png")
     );
   }
 
   @include vp-1199 {
     background-image: image-set(
-      url("./img/about/about-tablet.webp") type("image/webp"),
-      url("./img/about/about-tablet.png") type("image/png")
+      url("../img/about/about-tablet.webp") type("image/webp"),
+      url("../img/about/about-tablet.png") type("image/png")
     );
     background-size: 475px 402px;
     background-position: 0 57px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: image-set(
-        url("./img/about/about-tablet@2x.webp") type("image/webp"),
-        url("./img/about/about-tablet@2x.png") type("image/png")
+        url("../img/about/about-tablet@2x.webp") type("image/webp"),
+        url("../img/about/about-tablet@2x.png") type("image/png")
       );
     }
   }
