@@ -1,0 +1,148 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  z-index: 2;
+
+  @include vp-1199 {
+    top: 0;
+  }
+
+  @include vp-767 {
+    top: 0;
+  }
+}
+
+.header .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+  @include vp-1199 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  @include vp-767 {
+    padding-top: 16px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+
+  @include vp-1199 {
+    padding-right: 20px;
+    order: 2;
+  }
+
+  @include vp-767 {
+    margin-bottom: 8px;
+    padding-right: 0;
+  }
+}
+
+.header__logo-link svg {
+  fill: $color-default-white;
+
+  @include vp-1199 {
+    width: 144px;
+    height: 44px;
+  }
+
+  @include vp-767 {
+    width: 112px;
+    height: 34px;
+  }
+}
+
+.header__burger-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @include vp-1199 {
+    padding: 0;
+    display: flex;
+    width: 26px;
+    height: 26px;
+    background: url("../../img/sprite/burger-icon.svg") no-repeat center / 26px 26px;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+  }
+}
+
+.header__phone-link {
+  @include title-h6;
+
+  margin-top: 2px;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus-visible {
+    color: #1c3374;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+
+  @include vp-1199 {
+    order: 3;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+  }
+}
+
+.header__menu-opened .container {
+  background-color: $color-default-white;
+}
+
+.header__menu-opened svg {
+  @include vp-1199 {
+    fill: $color-elephant;
+  }
+}
+
+.header__menu-opened .header__burger-btn {
+  width: 22px;
+  height: 22px;
+  background: url("../../img/sprite/close-icon.svg") no-repeat center / 22px 22px;
+}
+
+.header__menu-opened .header__phone-link {
+  @include vp-1199 {
+    color: $color-elephant;
+    z-index: 1;
+  }
+}
+
+.header--nojs .container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.header--nojs .header__logo-link {
+  margin: 0;
+  margin-right: auto;
+}
+
+.header--nojs .header__burger-btn {
+  display: none;
+}

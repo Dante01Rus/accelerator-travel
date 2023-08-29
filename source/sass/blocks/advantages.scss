@@ -1,0 +1,234 @@
+.advantages .container {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  background-image: image-set(url("/img/review-cloud.webp") type("image/webp"),
+      url("/img/review-cloud.png") type("image/png"));
+  background-repeat: no-repeat;
+  background-size: 705px 391px;
+  background-position: left -190px;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: image-set(url("/img/review-cloud@2x.webp") type("image/webp"),
+        url("/img/review-cloud@2x.png") type("image/png"));
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 35px;
+    width: 602px;
+    height: 263px;
+    z-index: 0;
+    background-image: image-set(url("/img/advantage-cloud.webp") type("image/webp"),
+        url("/img/advantage-cloud.png") type("image/png"));
+    background-repeat: no-repeat;
+    background-size: 705px 391px;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("/img/advantage-cloud@2x.webp") type("image/webp"),
+          url("/img/advantage-cloud@2x.png") type("image/png"));
+    }
+  }
+
+  @include vp-1199 {
+    padding-top: 13px;
+    background: none;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 2px;
+    padding-bottom: 46px;
+  }
+}
+
+.advantages__title-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.advantages__title-wrapper span {
+  @include title-h2;
+
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  opacity: 0.03;
+  transform: translate(-50%);
+  z-index: 1;
+
+  @include vp-1199 {
+    top: -20px;
+    font-size: 40px;
+  }
+
+  @include vp-767 {
+    top: -3px;
+    font-size: 26px;
+  }
+}
+
+.advantages__title-wrapper h2 {
+  @include title-h3;
+
+  position: relative;
+  margin: 0 0 47px;
+  z-index: 1;
+
+  @include vp-767 {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__swiper-buttons {
+  margin-top: 49px;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__swiper-button {
+  width: 37px;
+  height: 35px;
+  cursor: pointer;
+
+  &--prev {
+    background: url("/img/sprite.svg#arrow-left");
+
+    &:hover,
+    &:focus-visible {
+      background: url("/img/sprite.svg#arrow-left-hf");
+    }
+
+    &:active {
+      background: url("/img/sprite.svg#arrow-left-active");
+    }
+  }
+
+  &--next {
+    background: url("/img/sprite.svg#arrow-right");
+
+    &:hover,
+    &:focus-visible {
+      background: url("/img/sprite.svg#arrow-right-hf");
+    }
+
+    &:active {
+      background: url("/img/sprite.svg#arrow-right-active");
+    }
+  }
+}
+
+.advantages__swiper-button--prev.advantages__swiper-button--disabled {
+  background: url("/img/sprite.svg#arrow-left-disabled");
+}
+
+.advantages__swiper-button--next.advantages__swiper-button--disabled {
+  background: url("/img/sprite.svg#arrow-right-disabled");
+}
+
+.advantages__swiper {
+  width: 100%;
+  overflow: visible;
+}
+
+.advantages__swiper-wrapper {
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 14px;
+  }
+}
+
+.advantages__swiper-slide {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 380px;
+  min-height: 329px;
+  background-color: $color-default-white;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  @include vp-1199 {
+    padding: 30px 20px;
+    width: 324px;
+    box-sizing: border-box;
+
+    &--safe,
+    &--knowledge {
+      min-height: 272px;
+    }
+
+    &--boots,
+    &--path {
+      min-height: 290px;
+    }
+
+    &--leaf {
+      min-height: 270px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 20px 10px;
+    width: 290px;
+    min-height: 244px;
+  }
+}
+
+.advantages__swiper-slide svg {
+  margin-top: 15px;
+  margin-bottom: 46px;
+  fill: $color-navy-blue;
+  outline: 1px solid $color-navy-blue;
+  outline-offset: 15px;
+
+  @include vp-1199 {
+    margin-top: 13px;
+    margin-bottom: 39px;
+    width: 20px;
+    height: 20px;
+    outline-offset: 13px;
+  }
+
+  @include vp-767 {
+    margin-top: 11px;
+    margin-bottom: 37px;
+    width: 18px;
+    height: 18px;
+    outline-offset: 11px;
+  }
+}
+
+.advantages__swiper-slide h3 {
+  @include title-h6;
+  margin: 0 0 15px;
+}
+
+.advantages__swiper-slide p {
+  @include text-small;
+
+  margin: 0;
+
+  @include vp-1199 {
+    @include text-xsmall;
+  }
+}

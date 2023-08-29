@@ -4,14 +4,26 @@
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
+  background-color: $color-navy-blue;
   border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
+  &--dark {
+    background-color: $color-elephant;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: #1c3374;
+    background-color: $color-default-white;
+    border: 1px solid #1c3374;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: #1c3374;
   }
 
   &:disabled {

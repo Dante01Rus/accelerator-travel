@@ -1,0 +1,430 @@
+.hero {
+  position: relative;
+  display: flex;
+}
+
+.hero .container {
+  padding: 0;
+}
+
+.hero__swiper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 800px;
+
+  @include vp-1199 {
+    height: 1024px;
+  }
+
+  @include vp-767 {
+    height: 568px;
+  }
+}
+
+.hero__swiper-slide {
+  position: relative;
+  padding: 182px 120px 80px;
+  height: 100%;
+
+  &--caucasus {
+    background-image: image-set(url("/img/hero/caucasus.webp") type("image/webp"),
+        url("/img/hero/caucasus.png") type("image/png"));
+    background-size: 1440px 800px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("/img/hero/caucasus@2x.webp") type("image/webp"),
+          url("/img/hero/caucasus@2x.png") type("image/png"));
+    }
+  }
+
+  &--kamchatka {
+    background-image: image-set(url("/img/hero/kamchatka.webp") type("image/webp"),
+        url("/img/hero/kamchatka.png") type("image/png"));
+    background-size: 1440px 800px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("/img/hero/kamchatka@2x.webp") type("image/webp"),
+          url("/img/hero/kamchatka@2x.png") type("image/png"));
+    }
+  }
+
+  &--altai {
+    background-image: image-set(url("/img/hero/altai.webp") type("image/webp"),
+        url("/img/hero/altai.png") type("image/png"));
+    background-size: 1440px 800px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("/img/hero/altai@2x.webp") type("image/webp"),
+          url("/img/hero/altai@2x.png") type("image/png"));
+    }
+  }
+
+  @include vp-1199 {
+    padding: 174px 45px 90px;
+    background-size: 1199px 1024px;
+  }
+
+  @media (max-width: $vp-768) {
+    &--caucasus {
+      background-image: image-set(url("/img/hero/caucasus-tablet.webp") type("image/webp"),
+          url("/img/hero/caucasus-tablet.png") type("image/png"));
+      background-size: 768px 1024px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/caucasus-tablet@2x.webp") type("image/webp"),
+            url("/img/hero/caucasus-tablet@2x.png") type("image/png"));
+      }
+    }
+
+    &--kamchatka {
+      background-image: image-set(url("/img/hero/kamchatka-tablet.webp") type("image/webp"),
+          url("/img/hero/kamchatka-tablet.png") type("image/png"));
+      background-size: 768px 1024px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/kamchatka-tablet@2x.webp") type("image/webp"),
+            url("/img/hero/kamchatka-tablet@2x.png") type("image/png"));
+      }
+    }
+
+    &--altai {
+      background-image: image-set(url("/img/hero/altai-tablet.webp") type("image/webp"),
+          url("/img/hero/altai-tablet.png") type("image/png"));
+      background-size: 768px 1024px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/altai-tablet@2x.webp") type("image/webp"),
+            url("/img/hero/altai-tablet@2x.png") type("image/png"));
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding: 139px 15px 40px;
+    background-size: 768px 568px;
+  }
+
+  @media (max-width: $vp-320) {
+    &--caucasus {
+      background-image: image-set(url("/img/hero/caucasus-mobile.webp") type("image/webp"),
+          url("/img/hero/caucasus-mobile.png") type("image/png"));
+      background-size: 320px 568px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/caucasus-mobile@2x.webp") type("image/webp"),
+            url("/img/hero/caucasus-mobile@2x.png") type("image/png"));
+      }
+    }
+
+    &--kamchatka {
+      background-image: image-set(url("/img/hero/kamchatka-mobile.webp") type("image/webp"),
+          url("/img/hero/kamchatka-mobile.png") type("image/png"));
+      background-size: 320px 568px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/kamchatka-mobile@2x.webp") type("image/webp"),
+            url("/img/hero/kamchatka-mobile@2x.png") type("image/png"));
+      }
+    }
+
+    &--altai {
+      background-image: image-set(url("/img/hero/altai-mobile.webp") type("image/webp"),
+          url("/img/hero/altai-mobile.png") type("image/png"));
+      background-size: 320px 568px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("/img/hero/altai-mobile@2x.webp") type("image/webp"),
+            url("/img/hero/altai-mobile@2x.png") type("image/png"));
+      }
+    }
+  }
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
+}
+
+.hero__swiper-pagination {
+  position: absolute;
+  display: flex;
+  bottom: 97px;
+  right: 120px;
+  height: 10px;
+  column-gap: 15px;
+  z-index: 5;
+
+  @include vp-1199 {
+    left: 50%;
+    bottom: 90px;
+    width: 60px;
+    transform: translate(-50%);
+  }
+
+  @include vp-767 {
+    bottom: 38px;
+    width: 48px;
+    column-gap: 12px;
+  }
+}
+
+.hero__swiper-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-navy-blue;
+    border: 1px solid $color-navy-blue;
+  }
+
+  &--active {
+    background-color: $color-default-white;
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      border: 1px solid $color-default-white;
+    }
+  }
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.hero__swiper-slide picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero__info {
+  position: relative;
+  z-index: 1;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero__info h1 {
+  @include title-h1;
+
+  margin: 0 0 23px;
+  position: relative;
+  width: 921px;
+  color: $color-default-white;
+  z-index: 4;
+
+  @include vp-1199 {
+    margin-bottom: 13px;
+    width: auto;
+  }
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
+}
+
+.hero__info p {
+  @include text-big;
+
+  margin: 0 0 37px;
+  width: 464px;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    margin-bottom: 27px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    width: auto;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.hero__btn {
+  margin-bottom: 150px;
+  padding: 17px 55px;
+
+  &:hover,
+  &:focus-visible {
+    padding: 16px 55px;
+  }
+
+  @include vp-1199 {
+    margin-bottom: 50px;
+    padding: 17px 48px;
+  }
+
+  @include vp-767 {
+    padding: 14px 35px;
+  }
+}
+
+.hero__video-wrapper {
+  position: absolute;
+  top: 119px;
+  right: 0;
+
+  @include vp-1199 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 442px;
+    height: 300px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__video {
+  width: 482px;
+  height: 317px;
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.hero__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  background: url("../../img/sprite.svg#play") no-repeat center / 56px 56px;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+
+  &:hover,
+  &:focus-visible {
+    background-image: url("../../img/sprite.svg#play-hover");
+  }
+
+  &:active {
+    background-image: url("../../img/sprite.svg#play-active");
+  }
+
+  &:disabled {
+    background-image: url("../../img/sprite.svg#play-disabled");
+    pointer-events: none;
+  }
+}
+
+.hero__photo-first {
+  position: absolute;
+  top: 20px;
+  right: 99px;
+  width: 308px;
+  height: 407px;
+  z-index: 1;
+
+  @include vp-1199 {
+    left: 18%;
+    top: 320px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__photo-second {
+  position: absolute;
+  top: 110px;
+  right: -33px;
+  width: 308px;
+  height: 407px;
+  z-index: 2;
+
+  @include vp-1199 {
+    left: 47%;
+    top: 375px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio-wrapper {
+  position: absolute;
+  top: 115px;
+  right: 0;
+  width: 340px;
+  height: 220px;
+  z-index: 5;
+
+  @include vp-1199 {
+    margin-top: 20px;
+    position: static;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio-wrapper iframe {
+  display: block;
+  border: none;
+}
+
+.hero__description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.hero__description svg {
+  margin-right: 8px;
+  fill: $color-default-white;
+}
+
+.hero__description span {
+  @include text-xsmall;
+
+  padding: 13px 19px;
+  display: flex;
+  align-items: center;
+  color: $color-default-white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
