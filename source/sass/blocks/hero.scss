@@ -3,6 +3,17 @@
   display: flex;
 }
 
+.hero > h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .hero .container {
   padding: 0;
 }
@@ -33,44 +44,14 @@
         url("../img/hero/caucasus.png") type("image/png"));
     background-size: 1440px 800px;
     background-repeat: no-repeat;
+    background-color: #5e83ae;
 
     @media (min-resolution: $retina-dppx) {
       background-image: image-set(url("../img/hero/caucasus@2x.webp") type("image/webp"),
           url("../img/hero/caucasus@2x.png") type("image/png"));
     }
-  }
 
-  &--kamchatka {
-    background-image: image-set(url("../img/hero/kamchatka.webp") type("image/webp"),
-        url("../img/hero/kamchatka.png") type("image/png"));
-    background-size: 1440px 800px;
-    background-repeat: no-repeat;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/hero/kamchatka@2x.webp") type("image/webp"),
-          url("../img/hero/kamchatka@2x.png") type("image/png"));
-    }
-  }
-
-  &--altai {
-    background-image: image-set(url("../img/hero/altai.webp") type("image/webp"),
-        url("../img/hero/altai.png") type("image/png"));
-    background-size: 1440px 800px;
-    background-repeat: no-repeat;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/hero/altai@2x.webp") type("image/webp"),
-          url("../img/hero/altai@2x.png") type("image/png"));
-    }
-  }
-
-  @include vp-1199 {
-    padding: 174px 45px 90px;
-    background-size: 1199px 1024px;
-  }
-
-  @media (max-width: $vp-768) {
-    &--caucasus {
+    @media (max-width: $vp-768) {
       background-image: image-set(url("../img/hero/caucasus-tablet.webp") type("image/webp"),
           url("../img/hero/caucasus-tablet.png") type("image/png"));
       background-size: 768px 1024px;
@@ -82,7 +63,32 @@
       }
     }
 
-    &--kamchatka {
+    @media (max-width: $vp-320) {
+      background-image: image-set(url("../img/hero/caucasus-mobile.webp") type("image/webp"),
+          url("../img/hero/caucasus-mobile.png") type("image/png"));
+      background-size: 320px 568px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/hero/caucasus-mobile@2x.webp") type("image/webp"),
+            url("../img/hero/caucasus-mobile@2x.png") type("image/png"));
+      }
+    }
+  }
+
+  &--kamchatka {
+    background-image: image-set(url("../img/hero/kamchatka.webp") type("image/webp"),
+        url("../img/hero/kamchatka.png") type("image/png"));
+    background-size: 1440px 800px;
+    background-repeat: no-repeat;
+    background-color: #4b7ba2;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("../img/hero/kamchatka@2x.webp") type("image/webp"),
+          url("../img/hero/kamchatka@2x.png") type("image/png"));
+    }
+
+    @media (max-width: $vp-768) {
       background-image: image-set(url("../img/hero/kamchatka-tablet.webp") type("image/webp"),
           url("../img/hero/kamchatka-tablet.png") type("image/png"));
       background-size: 768px 1024px;
@@ -94,38 +100,7 @@
       }
     }
 
-    &--altai {
-      background-image: image-set(url("../img/hero/altai-tablet.webp") type("image/webp"),
-          url("../img/hero/altai-tablet.png") type("image/png"));
-      background-size: 768px 1024px;
-      background-repeat: no-repeat;
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/hero/altai-tablet@2x.webp") type("image/webp"),
-            url("../img/hero/altai-tablet@2x.png") type("image/png"));
-      }
-    }
-  }
-
-  @include vp-767 {
-    padding: 139px 15px 40px;
-    background-size: 768px 568px;
-  }
-
-  @media (max-width: $vp-320) {
-    &--caucasus {
-      background-image: image-set(url("../img/hero/caucasus-mobile.webp") type("image/webp"),
-          url("../img/hero/caucasus-mobile.png") type("image/png"));
-      background-size: 320px 568px;
-      background-repeat: no-repeat;
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/hero/caucasus-mobile@2x.webp") type("image/webp"),
-            url("../img/hero/caucasus-mobile@2x.png") type("image/png"));
-      }
-    }
-
-    &--kamchatka {
+    @media (max-width: $vp-320) {
       background-image: image-set(url("../img/hero/kamchatka-mobile.webp") type("image/webp"),
           url("../img/hero/kamchatka-mobile.png") type("image/png"));
       background-size: 320px 568px;
@@ -136,8 +111,33 @@
             url("../img/hero/kamchatka-mobile@2x.png") type("image/png"));
       }
     }
+  }
 
-    &--altai {
+  &--altai {
+    background-image: image-set(url("../img/hero/altai.webp") type("image/webp"),
+        url("../img/hero/altai.png") type("image/png"));
+    background-size: 1440px 800px;
+    background-repeat: no-repeat;
+    background-color: #8a7952;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("../img/hero/altai@2x.webp") type("image/webp"),
+          url("../img/hero/altai@2x.png") type("image/png"));
+    }
+
+    @media (max-width: $vp-768) {
+      background-image: image-set(url("../img/hero/altai-tablet.webp") type("image/webp"),
+          url("../img/hero/altai-tablet.png") type("image/png"));
+      background-size: 768px 1024px;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/hero/altai-tablet@2x.webp") type("image/webp"),
+            url("../img/hero/altai-tablet@2x.png") type("image/png"));
+      }
+    }
+
+    @media (max-width: $vp-320) {
       background-image: image-set(url("../img/hero/altai-mobile.webp") type("image/webp"),
           url("../img/hero/altai-mobile.png") type("image/png"));
       background-size: 320px 568px;
@@ -148,6 +148,16 @@
             url("../img/hero/altai-mobile@2x.png") type("image/png"));
       }
     }
+  }
+
+  @include vp-1199 {
+    padding: 174px 45px 90px;
+    background-size: 1199px 1024px;
+  }
+
+  @include vp-767 {
+    padding: 139px 15px 40px;
+    background-size: 768px 568px;
   }
 }
 
@@ -232,7 +242,7 @@
   }
 }
 
-.hero__info h1 {
+.hero__info h2 {
   @include title-h1;
 
   margin: 0 0 23px;
@@ -320,29 +330,51 @@
 }
 
 .hero__video-btn {
+  padding-right: 2px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   left: 50%;
   width: 56px;
   height: 56px;
-  background: url("../img/sprite.svg#play") no-repeat center / 56px 56px;
+  border-radius: 50%;
+  outline: 1px solid $color-default-white;
   border: none;
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
   transform: translate(-50%, -50%);
 
   &:hover,
   &:focus-visible {
-    background-image: url("../img/sprite.svg#play-hover");
+    outline-color: #1c3374;
   }
 
   &:active {
-    background-image: url("../img/sprite.svg#play-active");
+    background-color: #1c3374;
   }
 
   &:disabled {
-    background-image: url("../img/sprite.svg#play-disabled");
+    outline-color: $color-elephant;
+    opacity: 0.2;
     pointer-events: none;
   }
+}
+
+.hero__video-btn svg {
+  fill: $color-default-white;
+}
+
+.hero__video-btn:hover svg,
+.hero__video-btn:focus-visible svg {
+  width: 14px;
+  height: 24px;
+  stroke: #1c3374;
+}
+
+.hero__video-btn:disabled svg {
+  fill: $color-elephant;
 }
 
 .hero__photo-first {

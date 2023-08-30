@@ -135,43 +135,43 @@
 }
 
 .tour__swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 37px;
   height: 35px;
+  background-color: $color-navy-blue;
   cursor: pointer;
-
-  &--prev {
-    background: url("../img/sprite.svg#arrow-left");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-left-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-left-active");
-    }
-  }
-
-  &--next {
-    background: url("../img/sprite.svg#arrow-right");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-right-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-right-active");
-    }
-  }
 }
 
-.tour__swiper-button--prev.tour__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-left-disabled");
+.tour__swiper-button svg {
+  fill: $color-default-white;
 }
 
-.tour__swiper-button--next.tour__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-right-disabled");
+.tour__swiper-button:hover,
+.tour__swiper-button:focus-visible {
+  background-color: $color-default-white;
+  outline: 1px solid #1c3374;
+}
+
+.tour__swiper-button:hover svg,
+.tour__swiper-button:focus-visible svg {
+  fill: #1c3374;
+}
+
+.tour__swiper-button:active {
+  background-color: #1c3374;
+  outline: none;
+}
+
+.tour__swiper-button:active svg {
+  fill: $color-default-white;
+}
+
+.tour__swiper-button--disabled {
+  background-color: $color-navy-blue;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .tour__swiper-slide {
@@ -181,6 +181,7 @@
   color: $color-default-white;
   cursor: grab;
   background-size: 380px 412px;
+  background-color: #575a05;
 
   &--caucasus {
     background-image: image-set(url("../img/tour/tour-1.webp") type("image/webp"),
@@ -189,6 +190,26 @@
     @media (min-resolution: $retina-dppx) {
       background-image: image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"),
           url("../img/tour/tour-1@2x.png") type("image/png"));
+    }
+
+    @include vp-1199 {
+      background-image: image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"),
+          url("../img/tour/tour-1-tablet.png") type("image/png"));
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"),
+            url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
+      }
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"),
+          url("../img/tour/tour-1-mobile.png") type("image/png"));
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"),
+            url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
+      }
     }
   }
 
@@ -200,6 +221,26 @@
       background-image: image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"),
           url("../img/tour/tour-2@2x.png") type("image/png"));
     }
+
+    @include vp-1199 {
+      background-image: image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"),
+          url("../img/tour/tour-2-tablet.png") type("image/png"));
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"),
+            url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
+      }
+    }
+
+    @include vp-767 {
+      background-image: image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"),
+          url("../img/tour/tour-2-mobile.png") type("image/png"));
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"),
+            url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
+      }
+    }
   }
 
   &--adyghea {
@@ -210,33 +251,8 @@
       background-image: image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"),
           url("../img/tour/tour-3@2x.png") type("image/png"));
     }
-  }
 
-  @include vp-1199 {
-    width: 324px;
-    background-size: 324px 412px;
-
-    &--caucasus {
-      background-image: image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"),
-          url("../img/tour/tour-1-tablet.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"),
-            url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
-      }
-    }
-
-    &--altai {
-      background-image: image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"),
-          url("../img/tour/tour-2-tablet.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"),
-            url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
-      }
-    }
-
-    &--adyghea {
+    @include vp-1199 {
       background-image: image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"),
           url("../img/tour/tour-3-tablet.png") type("image/png"));
 
@@ -245,33 +261,8 @@
             url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
       }
     }
-  }
 
-  @include vp-767 {
-    padding-top: 197px;
-    background-size: 290px 412px;
-
-    &--caucasus {
-      background-image: image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"),
-          url("../img/tour/tour-1-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"),
-            url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
-      }
-    }
-
-    &--altai {
-      background-image: image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"),
-          url("../img/tour/tour-2-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"),
-            url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
-      }
-    }
-
-    &--adyghea {
+    @include vp-767 {
       background-image: image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"),
           url("../img/tour/tour-3-mobile.png") type("image/png"));
 
@@ -280,6 +271,16 @@
             url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
       }
     }
+  }
+
+  @include vp-1199 {
+    width: 324px;
+    background-size: 324px 412px;
+  }
+
+  @include vp-767 {
+    padding-top: 197px;
+    background-size: 290px 412px;
   }
 }
 
@@ -476,22 +477,32 @@
 .tour__show-all {
   @include btn-big;
 
-  padding-right: 20px;
+  display: flex;
   align-self: center;
-  background: url("../img/sprite.svg#btn-arrow") no-repeat right -1px center / 10px 14px;
+}
 
-  &:hover,
-  &:focus-visible {
-    color: #1c3374;
-    background-image: url("../img/sprite.svg#btn-arrow-hover");
-  }
+.tour__show-all > span {
+  margin-right: 10px;
 
-  &:active {
-    color: $color-navy-blue;
-    background-image: url("../img/sprite.svg#btn-arrow-active");
+  @include vp-767 {
+    margin-right: 7px;
   }
+}
 
-  &:disabled {
-    background-image: url("../img/sprite.svg#btn-arrow-disabled");
-  }
+.tour__show-all svg {
+  stroke: $color-elephant;
+}
+
+.tour__show-all:hover span,
+.tour__show-all:hover svg,
+.tour__show-all:focus span,
+.tour__show-all:focus svg {
+  color: #1c3374;
+  stroke: #1c3374;
+}
+
+.tour__show-all:active span,
+.tour__show-all:active svg {
+  color: $color-navy-blue;
+  stroke: $color-navy-blue;
 }

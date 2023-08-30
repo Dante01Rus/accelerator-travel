@@ -5,6 +5,7 @@
   background-image: image-set(url("../img/feedback.webp") type("image/webp"),
       url("../img/feedback.png") type("image/png"));
   background-size: 1440px 800px;
+  background-color: #92979c;
 
   @media (min-resolution: $retina-dppx) {
     background-image: image-set(url("../img/feedback@2x.webp") type("image/webp"),
@@ -113,8 +114,7 @@
   border: none;
 
   &:hover {
-    padding: 21px 30px;
-    border: 1px solid $color-navy-blue;
+    outline: 1px solid $color-navy-blue;
 
     &::placeholder {
       color: $color-navy-blue;
@@ -123,14 +123,11 @@
 
   &:focus-visible,
   &:active {
-    padding: 21px 30px;
-    border: 1px solid #1c3374;
-    outline: none;
+    outline: 1px solid #1c3374;
   }
 
   &:disabled {
-    padding: 21px 30px;
-    border: 1px solid rgba(2, 102, 193, 0.1);
+    outline: 1px solid rgba(2, 102, 193, 0.1);
     background-color: $color-default-white;
 
     &::placeholder {
@@ -143,13 +140,6 @@
     margin-bottom: 8px;
     padding: 16px 15px;
     width: 266px;
-
-    &:hover,
-    &:focus-visible,
-    &:active,
-    &:disabled {
-      padding: 15px;
-    }
   }
 
   @include vp-767 {
@@ -159,7 +149,7 @@
 
 .feedback__name.is-invalid,
 .feedback__phone.is-invalid {
-  border: 1px solid #ff121f;
+  outline: 1px solid #ff121f;
 }
 
 .feedback__name,

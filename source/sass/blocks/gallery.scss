@@ -9,10 +9,10 @@
 
 .gallery__title-wrapper {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 24px;
 
   @include vp-1199 {
-    margin-bottom: 38px;
+    margin-bottom: 23px;
   }
 
   @include vp-767 {
@@ -42,32 +42,28 @@
 .gallery__title-wrapper h2 {
   @include title-h3;
 
-  margin: 0 0 24px;
-
-  @include vp-1199 {
-    margin-bottom: 22px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 15px;
-  }
+  margin: 0;
 }
 
-.gallery__title-wrapper p {
+.gallery p {
+  margin-bottom: 45px;
+
   @include vp-1199 {
     @include text-small;
 
+    margin-bottom: 37px;
     width: 395px;
   }
 
   @include vp-767 {
     @include text-xsmall;
 
+    margin-bottom: 15px;
     width: 100%;
   }
 }
 
-.gallery__title-wrapper br {
+.gallery br {
   @include vp-1199 {
     display: none;
   }
@@ -94,43 +90,43 @@
 }
 
 .gallery__swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 37px;
   height: 35px;
+  background-color: $color-navy-blue;
   cursor: pointer;
-
-  &--prev {
-    background: url("../img/sprite.svg#arrow-left");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-left-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-left-active");
-    }
-  }
-
-  &--next {
-    background: url("../img/sprite.svg#arrow-right");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-right-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-right-active");
-    }
-  }
 }
 
-.gallery__swiper-button--prev.gallery__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-left-disabled");
+.gallery__swiper-button svg {
+  fill: $color-default-white;
 }
 
-.gallery__swiper-button--next.gallery__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-right-disabled");
+.gallery__swiper-button:hover,
+.gallery__swiper-button:focus-visible {
+  background-color: $color-default-white;
+  outline: 1px solid #1c3374;
+}
+
+.gallery__swiper-button:hover svg,
+.gallery__swiper-button:focus-visible svg {
+  fill: #1c3374;
+}
+
+.gallery__swiper-button:active {
+  background-color: #1c3374;
+  outline: none;
+}
+
+.gallery__swiper-button:active svg {
+  fill: $color-default-white;
+}
+
+.gallery__swiper-button--disabled {
+  background-color: $color-navy-blue;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .gallery__swiper {

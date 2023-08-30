@@ -36,7 +36,7 @@
 }
 
 .about .container {
-  padding-top: 124px;
+  padding-top: 123px;
   padding-bottom: 66px;
 
   @include vp-1199 {
@@ -50,7 +50,7 @@
   }
 }
 
-.about__info {
+.about__title-wrapper {
   position: relative;
   padding-left: 615px;
 
@@ -63,7 +63,7 @@
   }
 }
 
-.about__info span {
+.about__title-wrapper span {
   @include title-h2;
 
   position: absolute;
@@ -84,13 +84,25 @@
   }
 }
 
-.about__info h2 {
+.about__title-wrapper h2 {
   @include title-h3;
 
   margin: 0 0 56px;
 
   @include vp-1199 {
     margin-bottom: 34px;
+  }
+}
+
+.about__info {
+  padding-left: 615px;
+
+  @include vp-1199 {
+    padding-left: 354px;
+  }
+
+  @include vp-767 {
+    padding-left: 0;
   }
 }
 

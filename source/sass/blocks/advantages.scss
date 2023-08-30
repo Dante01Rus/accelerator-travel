@@ -36,6 +36,7 @@
 
   @include vp-1199 {
     padding-top: 13px;
+    padding-bottom: 69px;
     background: none;
 
     &::after {
@@ -43,13 +44,13 @@
     }
 
     @media (min-resolution: $retina-dppx) {
-      background: none
+      background: none;
     }
   }
 
   @include vp-767 {
     padding-top: 2px;
-    padding-bottom: 46px;
+    padding-bottom: 47px;
   }
 }
 
@@ -103,43 +104,43 @@
 }
 
 .advantages__swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 37px;
   height: 35px;
+  background-color: $color-navy-blue;
   cursor: pointer;
-
-  &--prev {
-    background: url("../img/sprite.svg#arrow-left");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-left-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-left-active");
-    }
-  }
-
-  &--next {
-    background: url("../img/sprite.svg#arrow-right");
-
-    &:hover,
-    &:focus-visible {
-      background: url("../img/sprite.svg#arrow-right-hf");
-    }
-
-    &:active {
-      background: url("../img/sprite.svg#arrow-right-active");
-    }
-  }
 }
 
-.advantages__swiper-button--prev.advantages__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-left-disabled");
+.advantages__swiper-button svg {
+  fill: $color-default-white;
 }
 
-.advantages__swiper-button--next.advantages__swiper-button--disabled {
-  background: url("../img/sprite.svg#arrow-right-disabled");
+.advantages__swiper-button:hover,
+.advantages__swiper-button:focus-visible {
+  background-color: $color-default-white;
+  outline: 1px solid #1c3374;
+}
+
+.advantages__swiper-button:hover svg,
+.advantages__swiper-button:focus-visible svg {
+  fill: #1c3374;
+}
+
+.advantages__swiper-button:active {
+  background-color: #1c3374;
+  outline: none;
+}
+
+.advantages__swiper-button:active svg {
+  fill: $color-default-white;
+}
+
+.advantages__swiper-button--disabled {
+  background-color: $color-navy-blue;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .advantages__swiper {
@@ -171,54 +172,86 @@
   background-color: $color-default-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
 
-  @include vp-1199 {
-    padding: 30px 20px;
-    width: 324px;
-    box-sizing: border-box;
-
-    &--safe,
-    &--knowledge {
+  &--safe,
+  &--knowledge {
+    @include vp-1199 {
       min-height: 272px;
     }
+  }
 
-    &--boots,
-    &--path {
+  &--path {
+    @include vp-1199 {
       min-height: 290px;
     }
+  }
 
-    &--leaf {
+  &--leaf {
+    @include vp-1199 {
       min-height: 270px;
     }
   }
 
+  @include vp-1199 {
+    padding: 29px 20px;
+    width: 324px;
+    box-sizing: border-box;
+  }
+
   @include vp-767 {
-    padding: 20px 10px;
+    padding: 19px 10px;
     width: 290px;
     min-height: 244px;
   }
 }
 
-.advantages__swiper-slide svg {
-  margin-top: 15px;
-  margin-bottom: 46px;
-  fill: $color-navy-blue;
-  outline: 1px solid $color-navy-blue;
-  outline-offset: 15px;
-
+.advantages__swiper-slide--boots {
   @include vp-1199 {
-    margin-top: 13px;
-    margin-bottom: 39px;
-    width: 20px;
-    height: 20px;
-    outline-offset: 13px;
+    min-height: 290px;
   }
 
   @include vp-767 {
-    margin-top: 11px;
-    margin-bottom: 37px;
+    padding-top: 21px;
+  }
+}
+
+.advantages__icon-wrapper {
+  margin-bottom: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid $color-navy-blue;
+
+  @include vp-1199 {
+    margin-bottom: 25px;
+    width: 48px;
+    height: 48px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 42px;
+  }
+
+  &--path {
+    @include vp-767 {
+      margin-top: 2px;
+    }
+  }
+}
+
+.advantages__swiper-slide svg {
+  fill: $color-navy-blue;
+
+  @include vp-1199 {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include vp-767 {
     width: 18px;
     height: 18px;
-    outline-offset: 11px;
   }
 }
 

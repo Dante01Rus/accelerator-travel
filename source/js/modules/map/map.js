@@ -1,3 +1,5 @@
+import leaflet from '../../vendor/leaflet';
+
 let map = L.map('map').setView([55.7753572, 37.6300319], 17);
 let d2gIcon = L.icon({
   iconUrl: './img/sprite.svg#pin-filled',
