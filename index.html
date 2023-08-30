@@ -13,9 +13,6 @@
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <title>LifeTour - организация походов в горы</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -29,7 +26,7 @@
             <use href="./img/sprite.svg#logo"></use>
           </svg>
         </a>
-        <button class="header__burger-btn" aria-label="открыть/закрыть меню"></button>
+        <button class="header__burger-btn" type="button" aria-label="открыть/закрыть меню"></button>
         <nav class="header__nav nav">
           <ul class="nav__list nav__list--closed nav__list--nojs">
             <li class="nav__item">
@@ -58,6 +55,7 @@
 
     <main class="main">
       <section class="main__hero hero">
+        <h1>LifeTour - организация походов в горы</h1>
         <div class="container">
           <div class="hero__swiper swiper">
             <!-- Additional required wrapper -->
@@ -66,14 +64,17 @@
               <div class="hero__swiper-slide hero__swiper-slide--caucasus swiper-slide">
                 <div class="hero__overlay"></div>
                 <div class="hero__info">
-                  <h1>Захватывающие вершины Кавказа</h1>
+                  <h2>Захватывающие вершины Кавказа</h2>
                   <p>В сопровождении опытных гидов вы пройдете через потрясающие ландшафты и совершите восход
                     на&nbsp;вершину горы Чегет.</p>
                   <a href="#" class="hero__btn btn">Смотреть тур</a>
                   <div class="hero__video-wrapper">
                     <video class="hero__video" preload="auto" playsinline src="./img/html-academy-courses.mp4"
                       poster="./img/video-poster.webp"></video>
-                    <button class="hero__video-btn" aria-label="Кнопка воспроизведения видео.">
+                    <button class="hero__video-btn" type="button" aria-label="Кнопка воспроизведения видео.">
+                      <svg width="12" height="22">
+                        <use href="./img/sprite.svg#play-btn"></use>
+                      </svg>
                     </button>
                   </div>
                   <div class="hero__description">
@@ -96,7 +97,7 @@
               <div class="hero__swiper-slide hero__swiper-slide--kamchatka swiper-slide">
                 <div class="hero__overlay"></div>
                 <div class="hero__info">
-                  <h1>Невероятная природа Камчатки</h1>
+                  <h2>Невероятная природа Камчатки</h2>
                   <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
                     нетронутых уголков дикой природы в мире.</p>
                   <a href="#" class="hero__btn btn">Смотреть тур</a>
@@ -153,12 +154,13 @@
               <div class="hero__swiper-slide hero__swiper-slide--altai swiper-slide">
                 <div class="hero__overlay"></div>
                 <div class="hero__info">
-                  <h1>Магические пейзажи Алтайского Края</h1>
+                  <h2>Магические пейзажи Алтайского Края</h2>
                   <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух
                     ландшафтов Алтайских гор.</p>
                   <a href="#" class="hero__btn btn">Смотреть тур</a>
                   <div class="hero__audio-wrapper">
-                    <iframe width="340" height="220" src="https://music.yandex.ru/iframe/#track/112912322/25474374"></iframe>
+                    <iframe width="340" height="220"
+                      src="https://music.yandex.ru/iframe/#track/112912322/25474374"></iframe>
                   </div>
                   <div class="hero__description">
                     <span>
@@ -190,8 +192,16 @@
             <h2>Ближайшие туры</h2>
           </div>
           <div class="tour__swiper-buttons">
-            <div class="tour__swiper-button tour__swiper-button--prev"></div>
-            <div class="tour__swiper-button tour__swiper-button--next"></div>
+            <div class="tour__swiper-button tour__swiper-button--prev">
+              <svg width="15" height="9">
+                <use href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="tour__swiper-button tour__swiper-button--next">
+              <svg width="15" height="9">
+                <use href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
           <div class="tour__swiper swiper">
             <div class="tour__swiper-wrapper swiper-wrapper">
@@ -349,7 +359,12 @@
               </div>
             </div>
           </div>
-          <a href="#" class="tour__show-all">Показать все туры</a>
+          <a href="#" class="tour__show-all">
+            <span>Показать все туры</span>
+            <svg width="12" height="15">
+              <use href="./img/sprite.svg#btn-arrow"></use>
+            </svg>
+          </a>
         </div>
       </section>
 
@@ -358,14 +373,24 @@
           <div class="training__title-wrapper">
             <span>Обучение</span>
             <h2>Обучение</h2>
+          </div>
+          <div class="training__text-wrapper">
             <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных
               маршрутов
               Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
             <h3>Наши инструкторы</h3>
           </div>
           <div class="training__swiper-buttons">
-            <div class="training__swiper-button training__swiper-button--prev"></div>
-            <div class="training__swiper-button training__swiper-button--next"></div>
+            <div class="training__swiper-button training__swiper-button--prev">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="training__swiper-button training__swiper-button--next">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
           <div class="training__swiper swiper">
             <!-- Additional required wrapper -->
@@ -395,7 +420,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Александр<br>Прокофьев</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Строгий и внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                 </div>
               </div>
@@ -424,7 +453,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Светлана<br>Афиногенова</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать –
                     в&nbsp;этом назначение жизни.</p>
                 </div>
@@ -454,7 +487,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Надежда<br>Колесниченко</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Участники говорят, что Надежда ответственная, приятная в общении, и&nbsp;в поездках с ней
                     чувствуешь себя спокойно и уверенно.</p>
                 </div>
@@ -484,7 +521,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Федор<br>Кайгородов</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
                     путешествует по Европе.</p>
                 </div>
@@ -514,7 +555,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Светлана<br>Афиногенова</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать –
                     в&nbsp;этом назначение жизни.</p>
                 </div>
@@ -544,7 +589,11 @@
                 </picture>
                 <div class="training__trainer-info">
                   <h4>Надежда<br>Колесниченко</h4>
-                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте."></a>
+                  <a class="training__trainer-page" href="#" aria-label="страница тренера в ВКонтакте.">
+                    <svg width="16" height="9">
+                      <use href="./img/sprite.svg#vk-icon"></use>
+                    </svg>
+                  </a>
                   <p>Участники говорят, что Надежда ответственная, приятная в общении, и&nbsp;в поездках с ней
                     чувствуешь себя спокойно и уверенно.</p>
                 </div>
@@ -569,9 +618,11 @@
 
       <section class="main__about about" id="about">
         <div class="container">
-          <div class="about__info">
+          <div class="about__title-wrapper">
             <span>О нас</span>
             <h2>О нас</h2>
+          </div>
+          <div class="about__info">
             <h3>История компании</h3>
             <p>В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько
               понравилось, что мы этим стали жить. Спустя&nbsp;5&nbsp;лет, в 2005 году мы основали компанию, чтобы
@@ -591,8 +642,16 @@
             <h2>Отзывы</h2>
           </div>
           <div class="reviews__swiper-buttons">
-            <div class="reviews__swiper-button reviews__swiper-button--prev"></div>
-            <div class="reviews__swiper-button reviews__swiper-button--next"></div>
+            <div class="reviews__swiper-button reviews__swiper-button--prev">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="reviews__swiper-button reviews__swiper-button--next">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
           <div class="reviews__swiper swiper">
             <!-- Additional required wrapper -->
@@ -735,9 +794,11 @@
             <div class="advantages__swiper-wrapper swiper-wrapper">
               <!-- Slides -->
               <div class="advantages__swiper-slide advantages__swiper-slide--safe swiper-slide">
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#safe"></use>
-                </svg>
+                <div class="advantages__icon-wrapper">
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#safe"></use>
+                  </svg>
+                </div>
                 <h3>Безопасность и охрана</h3>
                 <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
                   Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной
@@ -745,9 +806,11 @@
               </div>
 
               <div class="advantages__swiper-slide advantages__swiper-slide--knowledge swiper-slide">
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#knowledge"></use>
-                </svg>
+                <div class="advantages__icon-wrapper">
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#knowledge"></use>
+                  </svg>
+                </div>
                 <h3>Экспертиза и знания</h3>
                 <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
                   безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и могут в полной мере
@@ -755,9 +818,11 @@
               </div>
 
               <div class="advantages__swiper-slide advantages__swiper-slide--boots swiper-slide">
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#boots"></use>
-                </svg>
+                <div class="advantages__icon-wrapper">
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#boots"></use>
+                  </svg>
+                </div>
                 <h3>Оборудование и снаряжение</h3>
                 <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
                   клиентов от&nbsp;необходимости покупать, брать с собой снаряжение, что&nbsp;делает путешествие более
@@ -765,9 +830,11 @@
               </div>
 
               <div class="advantages__swiper-slide advantages__swiper-slide--path swiper-slide">
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#path"></use>
-                </svg>
+                <div class="advantages__icon-wrapper advantages__icon-wrapper--path">
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#path"></use>
+                  </svg>
+                </div>
                 <h3>Индивидуальные маршруты</h3>
                 <p>Предлагает широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
                   адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили
@@ -775,9 +842,11 @@
               </div>
 
               <div class="advantages__swiper-slide advantages__swiper-slide--leaf swiper-slide">
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#leaf"></use>
-                </svg>
+                <div class="advantages__icon-wrapper">
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#leaf"></use>
+                  </svg>
+                </div>
                 <h3>Бережное отношение к&nbsp;природе</h3>
                 <p>Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают
                   минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
@@ -785,10 +854,17 @@
             </div>
           </div>
           <div class="advantages__swiper-buttons">
-            <div class="advantages__swiper-button advantages__swiper-button--prev"></div>
-            <div class="advantages__swiper-button advantages__swiper-button--next"></div>
+            <div class="advantages__swiper-button advantages__swiper-button--prev">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="advantages__swiper-button advantages__swiper-button--next">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
-        </div>
       </section>
 
       <section class="main__gallery gallery" id="gallery">
@@ -796,12 +872,19 @@
           <div class="gallery__title-wrapper">
             <span>Фотогалерея</span>
             <h2>Фотогалерея</h2>
-            <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а&nbsp;также отмечайте нас на фото.<br> Лучшие
-              фотографии украсят этот раздел нашего сайта.</p>
           </div>
+          <p>Добавляйте фото в Instagram с хэштегом #лайфтур, а&nbsp;также отмечайте нас на фото.<br> Лучшие фотографии украсят этот раздел нашего сайта.</p>
           <div class="gallery__swiper-buttons">
-            <div class="gallery__swiper-button gallery__swiper-button--prev"></div>
-            <div class="gallery__swiper-button gallery__swiper-button--next"></div>
+            <div class="gallery__swiper-button gallery__swiper-button--prev">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-left"></use>
+              </svg>
+            </div>
+            <div class="gallery__swiper-button gallery__swiper-button--next">
+              <svg width="15" height="9">
+                <use href="../img/sprite.svg#arrow-right"></use>
+              </svg>
+            </div>
           </div>
           <div class="gallery__swiper swiper">
             <!-- Additional required wrapper -->
@@ -947,19 +1030,22 @@
         <div class="container">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
-          <div class="form-contacts__form form" data-form-validate data-callback="base">
+          <div class="feedback__form form" data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru/." method="get">
-              <div class="feedback__name" data-validate-type="text" data-limitation="name" data-on-input-validate data-required>
+              <div class="feedback__name" data-validate-type="text" data-limitation="name" data-on-input-validate
+                data-required>
                 <label>
-                  <input type="text" name="name" minlength="1" placeholder="Как к вам обращаться?" required autocomplete="off">
+                  <input type="text" name="name" minlength="1" placeholder="Как к вам обращаться?" required
+                    autocomplete="off">
                 </label>
               </div>
-              <div class="feedback__phone" data-validate-type="phone" data-on-input-validate data-required data-matrix="___________">
+              <div class="feedback__phone" data-validate-type="phone" data-on-input-validate data-required
+                data-matrix="___________">
                 <label>
                   <input type="text" name="phone" placeholder="Телефон" required autocomplete="off">
                 </label>
               </div>
-              <button class="feedback__submit btn">Отправить</button>
+              <button class="feedback__submit btn" type="submit">Отправить</button>
             </form>
           </div>
         </div>
@@ -968,8 +1054,10 @@
       <section class="main-contacts contacts" id="contacts">
         <div class="container">
           <div class="contacts__text-wrapper">
-            <span>Контакты</span>
-            <h2>Контакты</h2>
+            <div class="contacts__title-wrapper">
+              <span>Контакты</span>
+              <h2>Контакты</h2>
+            </div>
             <p>Свяжитесь с нами любым удобным для&nbsp;вас&nbsp;способом или приходите к&nbsp;нам&nbsp;в гости. Мы будем
               рады поделиться увлекательными историями и подобрать для вас тур.</p>
             <ul class="contacts__list">
@@ -987,7 +1075,9 @@
               </li>
             </ul>
           </div>
-          <div class="contacts__map" id="map"></div>
+          <div class="contacts__map-wrapper">
+            <div class="contacts__map" id="map"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -1024,15 +1114,24 @@
         </div>
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--vk">
+            <a href="#" class="footer__social-link">
+              <svg width="16" height="9">
+                <use href="./img/sprite.svg#vk-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--ok">
+            <a href="#" class="footer__social-link">
+              <svg width="10" height="16">
+                <use href="./img/sprite.svg#ok-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--reddit">
+            <a href="#" class="footer__social-link">
+              <svg width="14" height="15">
+                <use href="./img/sprite.svg#reddit-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -1041,9 +1140,6 @@
     </footer>
   </div>
 
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
