@@ -10,8 +10,8 @@ if (map) {
     iconSize: [48, 48],
     iconAnchor: [24, 48],
   });
-  let marker = L.marker([55.7753572, 37.6300319], { icon: d2gIcon }).addTo(map);
+  let marker = L.marker([55.7753572, 37.6300319], {icon: d2gIcon}).addTo(map);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?{foo}', { foo: 'bar' }).addTo(map);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?{foo}', {foo: 'bar'}).addTo(map);
 }
 
