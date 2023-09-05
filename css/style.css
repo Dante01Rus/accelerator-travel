@@ -3254,6 +3254,7 @@ button,
   background-size: 602px 1364px;
   background-repeat: no-repeat;
   background-position: right -20px;
+  overflow: hidden;
 }
 
 .tour .container {
@@ -3715,8 +3716,9 @@ button,
 
 .training__swiper-slide {
   padding: 20px;
+  display: block;
   width: 278px;
-  min-height: 377px;
+  height: auto;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
@@ -3989,8 +3991,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   max-width: 790px;
-  min-height: 293px;
+  height: auto;
   gap: 30px;
+  background-color: #ffffff;
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
@@ -4159,7 +4162,7 @@ button,
   align-items: center;
   text-align: center;
   width: 380px;
-  min-height: 329px;
+  height: auto;
   background-color: #ffffff;
   border: 1px solid rgba(2, 102, 193, 0.1);
 }
@@ -5158,7 +5161,6 @@ button,
   .training__swiper-slide {
     padding: 15px;
     width: 206px;
-    min-height: 411px;
   }
 
   .training__swiper-slide h4 {
@@ -5296,7 +5298,6 @@ button,
   .reviews__swiper-slide {
     padding-right: 30px;
     max-width: 560px;
-    min-height: 277px;
   }
 
   .reviews__info {
@@ -5349,19 +5350,6 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
-  }
-
-  .advantages__swiper-slide--safe,
-  .advantages__swiper-slide--knowledge {
-    min-height: 272px;
-  }
-
-  .advantages__swiper-slide--path {
-    min-height: 290px;
-  }
-
-  .advantages__swiper-slide--leaf {
-    min-height: 270px;
   }
 
   .advantages__swiper-slide {
