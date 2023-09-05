@@ -3586,6 +3586,7 @@ button,
   background-repeat: no-repeat;
   background-size: 602px 1364px;
   background-position: right -811px;
+  overflow: hidden;
 }
 
 .training::after {
@@ -4200,6 +4201,7 @@ button,
 .gallery .container {
   position: relative;
   padding-top: 64px;
+  overflow: hidden;
 }
 
 .gallery__title-wrapper {
@@ -4288,7 +4290,7 @@ button,
 .gallery__swiper {
   position: relative;
   left: -120px;
-  width: 100%;
+  width: 100vw;
   max-width: 1440px;
 }
 
