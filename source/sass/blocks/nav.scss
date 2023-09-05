@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+  grid-column: 2/3;
 }
 
 .nav__list {
@@ -52,6 +53,7 @@
 .nav__link {
   @include btn-small;
 
+  padding: 25px 0 21px;
   position: relative;
   display: block;
   color: inherit;
@@ -60,7 +62,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
+      top: 45px;
       left: -5px;
       width: calc(100% + 10px);
       height: 1px;
@@ -92,8 +94,11 @@
   @include vp-1199 {
     @include btn-big;
 
+    padding: 0;
+
     &:hover {
       &::after {
+        top: 20px;
         background-color: $color-elephant;
       }
     }

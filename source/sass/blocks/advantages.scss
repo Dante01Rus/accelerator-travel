@@ -169,28 +169,28 @@
   align-items: center;
   text-align: center;
   width: 380px;
-  min-height: 329px;
+  height: auto;
   background-color: $color-default-white;
   border: 1px solid rgba(2, 102, 193, 0.1);
 
-  &--safe,
-  &--knowledge {
-    @include vp-1199 {
-      min-height: 272px;
-    }
-  }
+  // &--safe,
+  // &--knowledge {
+  //   @include vp-1199 {
+  //     min-height: 272px;
+  //   }
+  // }
 
-  &--path {
-    @include vp-1199 {
-      min-height: 290px;
-    }
-  }
+  // &--path {
+  //   @include vp-1199 {
+  //     min-height: 290px;
+  //   }
+  // }
 
-  &--leaf {
-    @include vp-1199 {
-      min-height: 270px;
-    }
-  }
+  // &--leaf {
+  //   @include vp-1199 {
+  //     min-height: 270px;
+  //   }
+  // }
 
   @include vp-1199 {
     padding: 29px 20px;

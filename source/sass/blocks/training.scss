@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: 602px 1364px;
   background-position: right -811px;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dppx) {
     background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"),
@@ -16,7 +17,7 @@
     position: absolute;
     content: "";
     left: 0;
-    bottom: 6px;
+    bottom: 7px;
     width: 100%;
     height: 1px;
     background-color: $color-navy-blue;
@@ -32,7 +33,7 @@
 
   @include vp-767 {
     background-size: 346px 595px;
-    background-position: right -377px;
+    background-position: 144px -377px;
   }
 }
 
@@ -215,19 +216,20 @@
     top: 0;
     left: 0;
     width: 290px;
+    box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   }
 }
 
 .training__swiper-slide {
   padding: 20px;
+  display: block;
   width: 278px;
-  min-height: 377px;
+  height: auto;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 
   @include vp-1199 {
     padding: 15px;
     width: 206px;
-    min-height: 411px;
   }
 
   @include vp-767 {
@@ -311,11 +313,17 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
   gap: 30px;
   list-style-type: none;
 
   @include vp-1199 {
     @include text-small;
+
+    margin: 0 auto;
+    justify-content: flex-start;
+    width: 678px;
     gap: 91px 88px;
   }
 
@@ -326,6 +334,7 @@
     margin: 0 auto;
     padding-left: 37px;
     flex-direction: column;
+    align-items: flex-start;
     width: 290px;
     gap: 25px 10px;
 
@@ -348,19 +357,19 @@
   overflow: visible;
 
   &--map {
-    background: url("../img/sprite.svg#map") no-repeat left 10px / 25px 25px;
+    background: url("../img/sprite.svg#map") no-repeat left bottom 13px / 25px 25px;
   }
 
   &--boots {
-    background: url("../img/sprite.svg#boots") no-repeat 1px 11px / 24px 24px;
+    background: url("../img/sprite.svg#boots") no-repeat left 1px bottom 12px / 24px 24px;
   }
 
   &--tree {
-    background: url("../img/sprite.svg#pine-tree") no-repeat left 12px / 23px 23px;
+    background: url("../img/sprite.svg#pine-tree") no-repeat left 1px bottom 12px / 23px 23px;
   }
 
   &--mountain {
-    background: url("../img/sprite.svg#mountain") no-repeat 2px 11px / 25px 25px;
+    background: url("../img/sprite.svg#mountain") no-repeat left 2px bottom 11px / 25px 25px;
   }
 
   @include vp-1199 {

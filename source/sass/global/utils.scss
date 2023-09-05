@@ -17,6 +17,11 @@
   }
 }
 
+.wrapper.modal-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
 

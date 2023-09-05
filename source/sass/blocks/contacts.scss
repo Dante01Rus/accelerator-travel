@@ -4,7 +4,7 @@
 
 .contacts .container {
   padding-top: 84px;
-  padding-bottom: 103px;
+  padding-bottom: 101px;
   display: flex;
   justify-content: space-between;
 
@@ -68,7 +68,7 @@
 
 .contacts__text-wrapper > p {
   @include text-regular;
-  margin: 0 0 48px;
+  margin: 0 0 50px;
 
   @include vp-1199 {
     margin-bottom: 40px;
@@ -155,8 +155,18 @@
   }
 }
 
-.contacts__link-phone,
+.contacts__link-phone {
+  display: flex;
+  max-width: 125px;
+}
+
 .contacts__link-email {
+  display: flex;
+  max-width: 143px;
+}
+
+.contacts__link--phone a,
+.contacts__link--email a {
   &:hover,
   &:focus-visible {
     color: #1c3374;
