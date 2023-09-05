@@ -3370,8 +3370,8 @@ button,
 }
 
 .tour__swiper-slide {
-  padding: 206px 20px 28px;
-  width: 380px;
+  padding: 206px 20px 23px;
+  max-width: 380px;
   min-height: 412px;
   color: #ffffff;
   cursor: -webkit-grab;
