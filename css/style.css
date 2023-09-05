@@ -4288,7 +4288,7 @@ button,
 .gallery__swiper {
   position: relative;
   left: -120px;
-  width: 100vw;
+  width: 100%;
   max-width: 1440px;
 }
 
