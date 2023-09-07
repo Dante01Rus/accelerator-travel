@@ -3029,18 +3029,21 @@ button,
 }
 
 .hero__swiper-slide--caucasus {
+  background-image: -webkit-image-set(url("../img/hero/caucasus.png") 2x, url("../img/hero/caucasus@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/hero/caucasus.webp") type("image/webp"), url("../img/hero/caucasus.png") type("image/png"));
   background-image: image-set(url("../img/hero/caucasus.webp") type("image/webp"), url("../img/hero/caucasus.png") type("image/png"));
   background-color: #5e83ae;
 }
 
 .hero__swiper-slide--kamchatka {
+  background-image: -webkit-image-set(url("../img/hero/kamchatka.png") 2x, url("../img/hero/kamchatka@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/hero/kamchatka.webp") type("image/webp"), url("../img/hero/kamchatka.png") type("image/png"));
   background-image: image-set(url("../img/hero/kamchatka.webp") type("image/webp"), url("../img/hero/kamchatka.png") type("image/png"));
   background-color: #4b7ba2;
 }
 
 .hero__swiper-slide--altai {
+  background-image: -webkit-image-set(url("../img/hero/altai.png") 2x, url("../img/hero/altai@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/hero/altai.webp") type("image/webp"), url("../img/hero/altai.png") type("image/png"));
   background-image: image-set(url("../img/hero/altai.webp") type("image/webp"), url("../img/hero/altai.png") type("image/png"));
   background-color: #8a7952;
@@ -3280,12 +3283,14 @@ button,
 }
 
 .tour {
-  background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
-  background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
   background-size: 602px 1364px;
   background-repeat: no-repeat;
   background-position: right -20px;
   overflow: hidden;
+  background-image: -webkit-image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
+  background-image: image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
+  background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
+  background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
 }
 
 .tour .container {
@@ -3299,11 +3304,13 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-image: -webkit-image-set(url("../img/tour-little-cloud.webp") type("image/webp"), url("../img/tour-little-cloud.png") type("image/png"));
-  background-image: image-set(url("../img/tour-little-cloud.webp") type("image/webp"), url("../img/tour-little-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 418px 279px;
   background-position: 0 491px;
+  background-image: -webkit-image-set(url("../img/tour-little-cloud@2x.png") 2x, url("../img/tour-little-cloud.png") 1x);
+  background-image: image-set(url("../img/tour-little-cloud@2x.png") 2x, url("../img/tour-little-cloud.png") 1x);
+  background-image: -webkit-image-set(url("../img/tour-little-cloud.webp") type("image/webp"), url("../img/tour-little-cloud.png") type("image/png"));
+  background-image: image-set(url("../img/tour-little-cloud.webp") type("image/webp"), url("../img/tour-little-cloud.png") type("image/png"));
 }
 
 .tour__title-wrapper {
@@ -3415,16 +3422,19 @@ button,
 }
 
 .tour__swiper-slide--caucasus {
+  background-image: -webkit-image-set(url("../img/tour/tour-1.png") 2x, url("../img/tour/tour-1@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
   background-image: image-set(url("../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
 }
 
 .tour__swiper-slide--altai {
+  background-image: -webkit-image-set(url("../img/tour/tour-2.png") 2x, url("../img/tour/tour-2@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
   background-image: image-set(url("../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
 }
 
 .tour__swiper-slide--adyghea {
+  background-image: -webkit-image-set(url("../img/tour/tour-3.png") 2x, url("../img/tour/tour-3@2x.png") 1x);
   background-image: -webkit-image-set(url("../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
   background-image: image-set(url("../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
 }
@@ -3620,12 +3630,14 @@ button,
 .training {
   position: relative;
   margin-top: -1px;
-  background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
-  background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 602px 1364px;
   background-position: right -811px;
   overflow: hidden;
+  background-image: -webkit-image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
+  background-image: image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
+  background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
+  background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
 }
 
 .training::after {
@@ -3870,11 +3882,13 @@ button,
 }
 
 .about {
-  background-image: -webkit-image-set(url("../img/about/about.webp") type("image/webp"), url("../img/about/about.png") type("image/png"));
-  background-image: image-set(url("../img/about/about.webp") type("image/webp"), url("../img/about/about.png") type("image/png"));
   background-repeat: no-repeat;
   background-position: left 88px;
   background-size: 808px 474px;
+  background-image: -webkit-image-set(url("../img/about/about.png") 2x, url("../img/about/about.png") 1x);
+  background-image: image-set(url("../img/about/about.png") 2x, url("../img/about/about.png") 1x);
+  background-image: -webkit-image-set(url("../img/about/about.webp") type("image/webp"), url("../img/about/about.png") type("image/png"));
+  background-image: image-set(url("../img/about/about.webp") type("image/webp"), url("../img/about/about.png") type("image/png"));
 }
 
 .about .container {
@@ -3928,11 +3942,13 @@ button,
   padding-top: 25px;
   padding-bottom: 30px;
   overflow: hidden;
-  background-image: -webkit-image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
-  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left 280px;
+  background-image: -webkit-image-set(url("../img/review-cloud@2x.png") 2x, url("../img/review-cloud.png") 1x);
+  background-image: image-set(url("../img/review-cloud@2x.png") 2x, url("../img/review-cloud.png") 1x);
+  background-image: -webkit-image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
+  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
 }
 
 .reviews__title-wrapper {
@@ -4074,11 +4090,13 @@ button,
   padding-top: 46px;
   padding-bottom: 66px;
   overflow: hidden;
-  background-image: -webkit-image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
-  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left -190px;
+  background-image: -webkit-image-set(url("../img/review-cloud@2x.png") 2x, url("../img/review-cloud.png") 1x);
+  background-image: image-set(url("../img/review-cloud@2x.png") 2x, url("../img/review-cloud.png") 1x);
+  background-image: -webkit-image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
+  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"), url("../img/review-cloud.png") type("image/png"));
 }
 
 .advantages .container::after {
@@ -4089,11 +4107,13 @@ button,
   width: 602px;
   height: 263px;
   z-index: 0;
-  background-image: -webkit-image-set(url("../img/advantage-cloud.webp") type("image/webp"), url("../img/advantage-cloud.png") type("image/png"));
-  background-image: image-set(url("../img/advantage-cloud.webp") type("image/webp"), url("../img/advantage-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: center;
+  background-image: -webkit-image-set(url("../img/advantage-cloud@2x.png") 2x, url("../img/advantage-cloud.png") 1x);
+  background-image: image-set(url("../img/advantage-cloud@2x.png") 2x, url("../img/advantage-cloud.png") 1x);
+  background-image: -webkit-image-set(url("../img/advantage-cloud.webp") type("image/webp"), url("../img/advantage-cloud.png") type("image/png"));
+  background-image: image-set(url("../img/advantage-cloud.webp") type("image/webp"), url("../img/advantage-cloud.png") type("image/png"));
 }
 
 .advantages__title-wrapper {
@@ -4355,14 +4375,16 @@ button,
 }
 
 .feedback {
-  background-image: -webkit-image-set(url("../img/feedback.webp") type("image/webp"), url("../img/feedback.png") type("image/png"));
-  background-image: image-set(url("../img/feedback.webp") type("image/webp"), url("../img/feedback.png") type("image/png"));
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #92979c;
   background-position: center;
   background-clip: padding-box;
   border: none;
+  background-image: -webkit-image-set(url("../img/feedback.png") 2x, url("../img/feedback.png") 1x);
+  background-image: image-set(url("../img/feedback.png") 2x, url("../img/feedback.png") 1x);
+  background-image: -webkit-image-set(url("../img/feedback.webp") type("image/webp"), url("../img/feedback.png") type("image/png"));
+  background-image: image-set(url("../img/feedback.webp") type("image/webp"), url("../img/feedback.png") type("image/png"));
 }
 
 .feedback .container {
@@ -4967,16 +4989,19 @@ button,
   }
 
   .hero__swiper-slide--caucasus {
+    background-image: -webkit-image-set(url("../img/hero/caucasus-tablet.png") 2x, url("../img/hero/caucasus-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/caucasus-tablet.webp") type("image/webp"), url("../img/hero/caucasus-tablet.png") type("image/png"));
     background-image: image-set(url("../img/hero/caucasus-tablet.webp") type("image/webp"), url("../img/hero/caucasus-tablet.png") type("image/png"));
   }
 
   .hero__swiper-slide--kamchatka {
+    background-image: -webkit-image-set(url("../img/hero/kamchatka-tablet.png") 2x, url("../img/hero/kamchatka-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/kamchatka-tablet.webp") type("image/webp"), url("../img/hero/kamchatka-tablet.png") type("image/png"));
     background-image: image-set(url("../img/hero/kamchatka-tablet.webp") type("image/webp"), url("../img/hero/kamchatka-tablet.png") type("image/png"));
   }
 
   .hero__swiper-slide--altai {
+    background-image: -webkit-image-set(url("../img/hero/altai-tablet.png") 2x, url("../img/hero/altai-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/altai-tablet.webp") type("image/webp"), url("../img/hero/altai-tablet.png") type("image/png"));
     background-image: image-set(url("../img/hero/altai-tablet.webp") type("image/webp"), url("../img/hero/altai-tablet.png") type("image/png"));
   }
@@ -5104,16 +5129,19 @@ button,
   }
 
   .tour__swiper-slide--caucasus {
+    background-image: -webkit-image-set(url("../img/tour/tour-1-tablet.png") 2x, url("../img/tour/tour-1-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
+    background-image: -webkit-image-set(url("../img/tour/tour-2-tablet.png") 2x, url("../img/tour/tour-2-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
+    background-image: -webkit-image-set(url("../img/tour/tour-3-tablet.png") 2x, url("../img/tour/tour-3-tablet@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
   }
@@ -5466,6 +5494,8 @@ button,
   }
 
   .feedback {
+    background-image: -webkit-image-set(url("../img/feedback-tablet.png") 2x, url("../img/feedback-tablet.png") 1x);
+    background-image: image-set(url("../img/feedback-tablet.png") 2x, url("../img/feedback-tablet.png") 1x);
     background-image: -webkit-image-set(url("../img/feedback-tablet.webp") type("image/webp"), url("../img/feedback-tablet.png") type("image/png"));
     background-image: image-set(url("../img/feedback-tablet.webp") type("image/webp"), url("../img/feedback-tablet.png") type("image/png"));
   }
@@ -5769,16 +5799,19 @@ button,
   }
 
   .hero__swiper-slide--caucasus {
+    background-image: -webkit-image-set(url("../img/hero/caucasus-mobile.png") 2x, url("../img/hero/caucasus-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/caucasus-mobile.webp") type("image/webp"), url("../img/hero/caucasus-mobile.png") type("image/png"));
     background-image: image-set(url("../img/hero/caucasus-mobile.webp") type("image/webp"), url("../img/hero/caucasus-mobile.png") type("image/png"));
   }
 
   .hero__swiper-slide--kamchatka {
+    background-image: -webkit-image-set(url("../img/hero/kamchatka-mobile.png") 2x, url("../img/hero/kamchatka-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/kamchatka-mobile.webp") type("image/webp"), url("../img/hero/kamchatka-mobile.png") type("image/png"));
     background-image: image-set(url("../img/hero/kamchatka-mobile.webp") type("image/webp"), url("../img/hero/kamchatka-mobile.png") type("image/png"));
   }
 
   .hero__swiper-slide--altai {
+    background-image: -webkit-image-set(url("../img/hero/altai-mobile.png") 2x, url("../img/hero/altai-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/hero/altai-mobile.webp") type("image/webp"), url("../img/hero/altai-mobile.png") type("image/png"));
     background-image: image-set(url("../img/hero/altai-mobile.webp") type("image/webp"), url("../img/hero/altai-mobile.png") type("image/png"));
   }
@@ -5888,16 +5921,19 @@ button,
   }
 
   .tour__swiper-slide--caucasus {
+    background-image: -webkit-image-set(url("../img/tour/tour-1-mobile.png") 2x, url("../img/tour/tour-1-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
   }
 
   .tour__swiper-slide--altai {
+    background-image: -webkit-image-set(url("../img/tour/tour-2-mobile.png") 2x, url("../img/tour/tour-2-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
   }
 
   .tour__swiper-slide--adyghea {
+    background-image: -webkit-image-set(url("../img/tour/tour-3-mobile.png") 2x, url("../img/tour/tour-3-mobile@2x.png") 1x);
     background-image: -webkit-image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
   }
@@ -6368,6 +6404,8 @@ button,
   }
 
   .feedback {
+    background-image: -webkit-image-set(url("../img/feedback-mobile.png") 2x, url("../img/feedback-mobile.png") 1x);
+    background-image: image-set(url("../img/feedback-mobile.png") 2x, url("../img/feedback-mobile.png") 1x);
     background-image: -webkit-image-set(url("../img/feedback-mobile.webp") type("image/webp"), url("../img/feedback-mobile.png") type("image/png"));
     background-image: image-set(url("../img/feedback-mobile.webp") type("image/webp"), url("../img/feedback-mobile.png") type("image/png"));
   }
