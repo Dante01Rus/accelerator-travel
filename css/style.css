@@ -3341,8 +3341,9 @@ button,
   left: 0;
   right: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.6)), to(rgb(0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 60%, rgb(0, 0, 0) 100%);
+  z-index: 1;
 }
 
 .tour__swiper-buttons {
@@ -3432,6 +3433,7 @@ button,
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
+  position: relative;
   margin: 0 0 23px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3441,6 +3443,7 @@ button,
   align-items: center;
   gap: 10px 37px;
   min-height: 29px;
+  z-index: 2;
 }
 
 .tour__info-location {
@@ -3488,6 +3491,7 @@ button,
   font-weight: 700;
   position: relative;
   margin: 0 0 38px;
+  z-index: 2;
 }
 
 .tour__swiper-slide h3::after {
@@ -3502,10 +3506,12 @@ button,
 }
 
 .tour__details {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px 53px;
+  z-index: 2;
 }
 
 .tour__details p {
@@ -5811,16 +5817,16 @@ button,
     line-height: 20px;
   }
 
-  .hero__btn:hover,
-  .hero__btn:focus-visible {
-    padding: 13px 34px;
-  }
-
   .hero__btn {
     padding: 14px 35px;
     display: block;
     width: 100%;
     max-width: none;
+  }
+
+  .hero__btn:hover,
+  .hero__btn:focus-visible {
+    padding: 13px 34px;
   }
 
   .hero__video-wrapper {
