@@ -3,11 +3,13 @@
   padding-top: 25px;
   padding-bottom: 30px;
   overflow: hidden;
-  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"),
-      url("../img/review-cloud.png") type("image/png"));
   background-repeat: no-repeat;
   background-size: 705px 391px;
   background-position: left 280px;
+  background-image: image-set(url("../img/review-cloud@2x.png") 2x,
+      url("../img/review-cloud.png") 1x);
+  background-image: image-set(url("../img/review-cloud.webp") type("image/webp"),
+      url("../img/review-cloud.png") type("image/png"));
 
   @media (min-resolution: $retina-dppx) {
     background-image: image-set(url("../img/review-cloud@2x.webp") type("image/webp"),
@@ -200,7 +202,7 @@
   }
 }
 
-.reviews__info p + p {
+.reviews__info p+p {
   @include vp-767 {
     margin-bottom: 16px;
   }

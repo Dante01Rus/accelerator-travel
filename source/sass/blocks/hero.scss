@@ -3,7 +3,7 @@
   display: flex;
 }
 
-.hero > h1 {
+.hero>h1 {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,6 +42,9 @@
   background-repeat: no-repeat;
 
   &--caucasus {
+    background-image: -webkit-image-set(url("../img/hero/caucasus.png") 2x,
+        url("../img/hero/caucasus@2x.png") 1x);
+
     background-image: image-set(url("../img/hero/caucasus.webp") type("image/webp"),
         url("../img/hero/caucasus.png") type("image/png"));
     background-color: #5e83ae;
@@ -52,6 +55,8 @@
     }
 
     @include vp-1199 {
+      background-image: -webkit-image-set(url("../img/hero/caucasus-tablet.png") 2x, url("../img/hero/caucasus-tablet@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/caucasus-tablet.webp") type("image/webp"),
           url("../img/hero/caucasus-tablet.png") type("image/png"));
 
@@ -62,6 +67,9 @@
     }
 
     @include vp-767 {
+      background-image: -webkit-image-set(url("../img/hero/caucasus-mobile.png") 2x,
+          url("../img/hero/caucasus-mobile@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/caucasus-mobile.webp") type("image/webp"),
           url("../img/hero/caucasus-mobile.png") type("image/png"));
 
@@ -73,6 +81,8 @@
   }
 
   &--kamchatka {
+    background-image: -webkit-image-set(url("../img/hero/kamchatka.png") 2x, url("../img/hero/kamchatka@2x.png") 1x);
+
     background-image: image-set(url("../img/hero/kamchatka.webp") type("image/webp"),
         url("../img/hero/kamchatka.png") type("image/png"));
     background-color: #4b7ba2;
@@ -83,6 +93,8 @@
     }
 
     @include vp-1199 {
+      background-image: -webkit-image-set(url("../img/hero/kamchatka-tablet.png") 2x, url("../img/hero/kamchatka-tablet@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/kamchatka-tablet.webp") type("image/webp"),
           url("../img/hero/kamchatka-tablet.png") type("image/png"));
 
@@ -93,6 +105,8 @@
     }
 
     @include vp-767 {
+      background-image: -webkit-image-set(url("../img/hero/kamchatka-mobile.png") 2x, url("../img/hero/kamchatka-mobile@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/kamchatka-mobile.webp") type("image/webp"),
           url("../img/hero/kamchatka-mobile.png") type("image/png"));
 
@@ -104,6 +118,9 @@
   }
 
   &--altai {
+    background-image: -webkit-image-set(url("../img/hero/altai.png") 2x,
+        url("../img/hero/altai@2x.png") 1x);
+
     background-image: image-set(url("../img/hero/altai.webp") type("image/webp"),
         url("../img/hero/altai.png") type("image/png"));
     background-color: #8a7952;
@@ -114,6 +131,9 @@
     }
 
     @include vp-1199 {
+      background-image: -webkit-image-set(url("../img/hero/altai-tablet.png") 2x,
+          url("../img/hero/altai-tablet@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/altai-tablet.webp") type("image/webp"),
           url("../img/hero/altai-tablet.png") type("image/png"));
 
@@ -124,6 +144,9 @@
     }
 
     @include vp-767 {
+      background-image: -webkit-image-set(url("../img/hero/altai-mobile.png") 2x,
+          url("../img/hero/altai-mobile@2x.png") 1x);
+
       background-image: image-set(url("../img/hero/altai-mobile.webp") type("image/webp"),
           url("../img/hero/altai-mobile.png") type("image/png"));
 
