@@ -278,15 +278,6 @@
   max-width: 222px;
   word-break: break-all;
 
-  &:hover,
-  &:focus-visible {
-    padding: 16px 54px;
-
-    @include vp-767 {
-      padding: 13px 34px;
-    }
-  }
-
   @include vp-1199 {
     margin-bottom: 50px;
     padding: 17px 48px;
@@ -302,6 +293,15 @@
   @media (max-width: 320px) {
     padding: 14px 20px;
     width: 180px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    padding: 16px 54px;
+
+    @include vp-767 {
+      padding: 13px 34px;
+    }
   }
 }
 

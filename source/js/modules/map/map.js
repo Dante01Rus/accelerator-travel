@@ -14,4 +14,3 @@ if (map) {
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?{foo}', {foo: 'bar'}).addTo(map);
 }
-
