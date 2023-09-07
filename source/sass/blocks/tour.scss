@@ -17,7 +17,7 @@
   }
 
   @include vp-767 {
-    background-position: 144px 256px;
+    background-position: right 256px;
     background-size: 346px 595px;
   }
 }
@@ -104,7 +104,7 @@
 
   @include vp-767 {
     margin-bottom: 29px;
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -114,7 +114,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 22.3%, rgba(0, 0, 0, 0.00) 60.32%);
 }
 
 .tour__swiper-buttons {
@@ -283,6 +283,8 @@
   @include vp-767 {
     padding-top: 197px;
     padding-bottom: 21px;
+    width: 100%;
+    max-width: none;
   }
 }
 

@@ -1,8 +1,13 @@
+const DEFAULT_DESKTOP_PADDING = 120;
+const DEFAULT_TABLET_PADDING = 47;
+const DEFAULT_MOBILE_PADDING = 18;
+
 const nav = document.querySelector('.nav__list');
 const navToggle = document.querySelector('.header__burger-btn');
 const header = document.querySelector('.header');
 const pageMain = document.querySelector('.main');
 const pageWrapper = document.querySelector('.wrapper');
+const heroSlide = document.querySelector('.hero__swiper-slide');
 
 nav.classList.remove('nav__list--nojs');
 header.classList.remove('header--nojs');
@@ -25,7 +30,25 @@ function menuBtnOnclick() {
 
 navToggle.addEventListener('click', menuBtnOnclick);
 nav.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('nav__link')) {
-    menuBtnOnclick();
+  if (window.innerWidth < 1200) {
+    if (evt.target.classList.contains('nav__link')) {
+      menuBtnOnclick();
+    }
   }
 });
+
+// window.addEventListener('resize', () => {
+//   let height = header.clientHeight;
+//   console.log('pizdec');
+//   heroSlide.style.paddingTop = `${DEFAULT_PADDING + height + 100}px`;
+// });
+if (window.innerWidth >= 1200) {
+  let height = header.clientHeight;
+  heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
+} else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+  let height = header.clientHeight;
+  heroSlide.style.paddingTop = `${DEFAULT_TABLET_PADDING + height}px`;
+} else if (window.innerWidth < 768) {
+  let height = header.clientHeight;
+  heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
+}

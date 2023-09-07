@@ -135,7 +135,7 @@
   }
 
   @include vp-1199 {
-    padding: 174px 45px 90px;
+    padding: 175px 45px 90px;
     background-position: bottom;
     min-height: 1024px;
   }
@@ -294,6 +294,14 @@
 
   @include vp-767 {
     padding: 14px 35px;
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+
+  @media (max-width: 320px) {
+    padding: 14px 20px;
+    width: 180px;
   }
 }
 

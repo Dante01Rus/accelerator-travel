@@ -6,16 +6,18 @@
 .nav__list {
   margin: 0;
   padding: 0;
-  width: 579px;
+  width: 608px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  gap: 10px 32px;
   color: $color-default-white;
+  transform: translate(15px);
 
   @include vp-1199 {
     flex-direction: column;
+    transform: none;
 
     &--closed {
       display: none;
@@ -23,7 +25,7 @@
 
     &--opened {
       position: absolute;
-      padding-left: 45px;
+      padding-left: 35px;
       padding-bottom: 70px;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -32,7 +34,7 @@
       left: 0;
       width: 100%;
       max-height: 296px;
-      gap: 26px 10px;
+      gap: 6px 10px;
       color: $color-elephant;
       background-color: $color-default-white;
       overflow-y: auto;
@@ -50,10 +52,20 @@
   }
 }
 
+.nav__item {
+  display: flex;
+  align-items: center;
+  min-height: 62px;
+
+  @include vp-1199 {
+    min-height: auto;
+  }
+}
+
 .nav__link {
   @include btn-small;
 
-  padding: 25px 0 21px;
+  padding: 15px;
   position: relative;
   display: block;
   color: inherit;
@@ -62,9 +74,9 @@
     &::after {
       position: absolute;
       content: "";
-      top: 45px;
-      left: -5px;
-      width: calc(100% + 10px);
+      top: 40px;
+      left: 10px;
+      width: calc(100% - 20px);
       height: 1px;
       background-color: $color-default-white;
     }
@@ -94,11 +106,13 @@
   @include vp-1199 {
     @include btn-big;
 
-    padding: 0;
+    padding: 10px;
 
     &:hover {
       &::after {
-        top: 20px;
+        top: 30px;
+        left: 5px;
+        width: calc(100% - 10px);
         background-color: $color-elephant;
       }
     }

@@ -27,7 +27,6 @@
   @include vp-767 {
     background-image: image-set(url("../img/feedback-mobile.webp") type("image/webp"),
         url("../img/feedback-mobile.png") type("image/png"));
-    background-size: 320px 621px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: image-set(url("../img/feedback-mobile@2x.webp") type("image/webp"),
