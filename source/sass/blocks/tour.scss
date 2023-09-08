@@ -1,26 +1,51 @@
 .tour {
-  background-size: 602px 1364px;
-  background-repeat: no-repeat;
-  background-position: right -20px;
-  overflow: hidden;
-  background-image: image-set(url("../img/clouds@2x.png") 2x,
-      url("../img/clouds.png") 1x);
-  background-image: image-set(url("../img/clouds.webp") type("image/webp"),
-      url("../img/clouds.png") type("image/png"));
+  position: relative;
 
-  @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"),
-        url("../img/clouds@2x.png") type("image/png"));
-  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 602px;
+    height: 1364px;
+    background-size: 602px 1364px;
+    background-repeat: no-repeat;
+    background-position: right -20px;
+    background-image: image-set(url("../img/clouds@2x.png") 2x,
+        url("../img/clouds.png") 1x);
+    background-image: image-set(url("../img/clouds.webp") type("image/webp"),
+        url("../img/clouds.png") type("image/png"));
 
+    @media (min-resolution: $retina-dppx) {
+      background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"),
+          url("../img/clouds@2x.png") type("image/png"));
+    }
 
-  @include vp-1199 {
-    background-position: right -96px;
-  }
+    z-index: 1;
 
-  @include vp-767 {
-    background-position: right 256px;
-    background-size: 346px 595px;
+    @include vp-1199 {
+      top: 2px;
+      right: -308px;
+      background-position: right -96px;
+    }
+
+    @include vp-767 {
+      width: 176px;
+      height: 595px;
+      top: 137px;
+      right: 0;
+      background-position: 0 0;
+      background-size: 176px 595px;
+      background-image: image-set(url("../img/clouds-mobile@2x.png") 2x,
+          url("../img/clouds-mobile.png") 1x);
+      background-image: image-set(url("../img/clouds-mobile.webp") type("image/webp"),
+          url("../img/clouds-mobile.png") type("image/png"));
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: image-set(url("../img/clouds-mobile@2x.webp") type("image/webp"),
+            url("../img/clouds-mobile@2x.png") type("image/png"));
+      }
+    }
   }
 }
 
@@ -30,6 +55,7 @@
   padding-bottom: 102px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
   background-repeat: no-repeat;
   background-size: 418px 279px;
   background-position: 0 491px;
@@ -184,8 +210,11 @@
 
 .tour__swiper-slide {
   padding: 206px 20px 23px;
+  display: flex;
+  flex-direction: column;
   max-width: 380px;
   min-height: 412px;
+  height: auto;
   color: $color-default-white;
   cursor: grab;
   background-size: cover;
@@ -410,6 +439,7 @@
 }
 
 .tour__details {
+  margin-top: auto;
   position: relative;
   display: flex;
   gap: 10px 53px;
@@ -523,7 +553,7 @@
   align-self: center;
 }
 
-.tour__show-all > span {
+.tour__show-all>span {
   margin-right: 10px;
 
   @include vp-767 {

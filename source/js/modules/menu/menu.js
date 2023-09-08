@@ -1,6 +1,6 @@
 const DEFAULT_DESKTOP_PADDING = 120;
 const DEFAULT_TABLET_PADDING = 47;
-const DEFAULT_MOBILE_PADDING = 18;
+const DEFAULT_MOBILE_PADDING = 51;
 
 const nav = document.querySelector('.nav__list');
 const navToggle = document.querySelector('.header__burger-btn');
@@ -37,11 +37,6 @@ nav.addEventListener('click', (evt) => {
   }
 });
 
-// window.addEventListener('resize', () => {
-//   let height = header.clientHeight;
-//   console.log('pizdec');
-//   heroSlide.style.paddingTop = `${DEFAULT_PADDING + height + 100}px`;
-// });
 if (window.innerWidth >= 1200) {
   let height = header.clientHeight;
   heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
@@ -52,3 +47,11 @@ if (window.innerWidth >= 1200) {
   let height = header.clientHeight;
   heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
 }
+
+pageWrapper.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('wrapper')) {
+    if (pageWrapper.classList.contains('modal-open')) {
+      menuBtnOnclick();
+    }
+  }
+});

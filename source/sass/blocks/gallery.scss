@@ -155,6 +155,7 @@
   min-height: 449px;
 
   @include vp-767 {
+    max-width: 323px;
     grid-template-columns: max-content 158px;
     min-height: 259px;
     gap: 3px;

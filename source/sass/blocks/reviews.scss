@@ -171,6 +171,7 @@
 .reviews__swiper-slide img {
   @include vp-767 {
     margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -211,11 +212,15 @@
 .reviews__info h3 {
   @include caption-big;
 
-  margin: auto 0 8px;
+  margin: 17px 0 8px;
 
   @include vp-1199 {
     font-size: 12px;
     margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    margin-top: -1px;
   }
 }
 
