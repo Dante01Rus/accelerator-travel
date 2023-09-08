@@ -2869,6 +2869,7 @@ button,
 .header__phone-link:hover,
 .header__phone-link:focus-visible {
   color: #1c3374;
+  outline: none;
 }
 
 .header__phone-link:active {
@@ -2971,7 +2972,7 @@ button,
 
 .nav__link:focus-visible {
   outline: 1px solid #ffffff;
-  outline-offset: 5px;
+  outline-offset: -10px;
 }
 
 .nav__link:focus-visible::after {
@@ -3283,14 +3284,24 @@ button,
 }
 
 .tour {
+  position: relative;
+}
+
+.tour::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 602px;
+  height: 1364px;
   background-size: 602px 1364px;
   background-repeat: no-repeat;
   background-position: right -20px;
-  overflow: hidden;
   background-image: -webkit-image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
   background-image: image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
   background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
   background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
+  z-index: 1;
 }
 
 .tour .container {
@@ -3304,6 +3315,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  z-index: 2;
   background-repeat: no-repeat;
   background-size: 418px 279px;
   background-position: 0 491px;
@@ -3412,8 +3424,16 @@ button,
 
 .tour__swiper-slide {
   padding: 206px 20px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 380px;
   min-height: 412px;
+  height: auto;
   color: #ffffff;
   cursor: -webkit-grab;
   cursor: grab;
@@ -3516,6 +3536,7 @@ button,
 }
 
 .tour__details {
+  margin-top: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3630,14 +3651,7 @@ button,
 .training {
   position: relative;
   margin-top: -1px;
-  background-repeat: no-repeat;
-  background-size: 602px 1364px;
-  background-position: right -811px;
   overflow: hidden;
-  background-image: -webkit-image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
-  background-image: image-set(url("../img/clouds@2x.png") 2x, url("../img/clouds.png") 1x);
-  background-image: -webkit-image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
-  background-image: image-set(url("../img/clouds.webp") type("image/webp"), url("../img/clouds.png") type("image/png"));
 }
 
 .training::after {
@@ -3659,6 +3673,7 @@ button,
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 100% 15px;
+  z-index: 2;
 }
 
 .training__title-wrapper {
@@ -3841,16 +3856,16 @@ button,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  position: relative;
+  left: calc((100% - 1200px) / 2);
   margin: 0;
   padding: 0;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -4076,7 +4091,7 @@ button,
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
-  margin: auto 0 8px;
+  margin: 17px 0 8px;
 }
 
 .reviews__info span {
@@ -5093,7 +5108,9 @@ button,
     line-height: 18px;
   }
 
-  .tour {
+  .tour::after {
+    top: 2px;
+    right: -308px;
     background-position: right -96px;
   }
 
@@ -5174,10 +5191,6 @@ button,
     content: none;
   }
 
-  .training {
-    background-position: right -793px;
-  }
-
   .training .container {
     padding-bottom: 40px;
     background: none;
@@ -5249,6 +5262,7 @@ button,
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
+    left: 0;
     margin: 0 auto;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
@@ -5748,6 +5762,7 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 16px;
+    padding-bottom: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -5878,9 +5893,17 @@ button,
     display: none;
   }
 
-  .tour {
-    background-position: right 256px;
-    background-size: 346px 595px;
+  .tour::after {
+    width: 176px;
+    height: 595px;
+    top: 137px;
+    right: 0;
+    background-position: 0 0;
+    background-size: 176px 595px;
+    background-image: -webkit-image-set(url("../img/clouds-mobile@2x.png") 2x, url("../img/clouds-mobile.png") 1x);
+    background-image: image-set(url("../img/clouds-mobile@2x.png") 2x, url("../img/clouds-mobile.png") 1x);
+    background-image: -webkit-image-set(url("../img/clouds-mobile.webp") type("image/webp"), url("../img/clouds-mobile.png") type("image/png"));
+    background-image: image-set(url("../img/clouds-mobile.webp") type("image/webp"), url("../img/clouds-mobile.png") type("image/png"));
   }
 
   .tour .container {
@@ -6020,11 +6043,6 @@ button,
     margin-right: 7px;
   }
 
-  .training {
-    background-size: 346px 595px;
-    background-position: right -377px;
-  }
-
   .training .container {
     padding-top: 27px;
   }
@@ -6091,6 +6109,7 @@ button,
 
   .training__swiper-slide img {
     margin: 0 auto;
+    width: 100%;
   }
 
   .training__trainer-page {
@@ -6279,6 +6298,7 @@ button,
 
   .reviews__swiper-slide img {
     margin: 0 auto;
+    width: 100%;
   }
 
   .reviews__info {
@@ -6294,6 +6314,10 @@ button,
   .reviews__info h3 {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  .reviews__info h3 {
+    margin-top: -1px;
   }
 
   .advantages .container {
@@ -6395,6 +6419,7 @@ button,
   }
 
   .gallery__swiper-slide {
+    max-width: 323px;
     -ms-grid-columns: -webkit-max-content 158px;
     -ms-grid-columns: max-content 158px;
     grid-template-columns: -webkit-max-content 158px;
@@ -6672,6 +6697,11 @@ button,
     background-image: image-set(url("../img/hero/altai-mobile@2x.webp") type("image/webp"), url("../img/hero/altai-mobile@2x.png") type("image/png"));
   }
 
+  .tour::after {
+    background-image: -webkit-image-set(url("../img/clouds-mobile@2x.webp") type("image/webp"), url("../img/clouds-mobile@2x.png") type("image/png"));
+    background-image: image-set(url("../img/clouds-mobile@2x.webp") type("image/webp"), url("../img/clouds-mobile@2x.png") type("image/png"));
+  }
+
   .tour__swiper-slide--caucasus {
     background-image: -webkit-image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
@@ -6750,6 +6780,12 @@ button,
   }
 }
 
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .header .container {
+    padding: 0 100px;
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -6780,7 +6816,7 @@ button,
     background-image: image-set(url("../img/hero/altai@2x.webp") type("image/webp"), url("../img/hero/altai@2x.png") type("image/png"));
   }
 
-  .tour {
+  .tour::after {
     background-image: -webkit-image-set(url("../img/clouds@2x.webp") type("image/webp"), url("../img/clouds@2x.png") type("image/png"));
     background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"), url("../img/clouds@2x.png") type("image/png"));
   }
@@ -6803,11 +6839,6 @@ button,
   .tour__swiper-slide--adyghea {
     background-image: -webkit-image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
     background-image: image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
-  }
-
-  .training {
-    background-image: -webkit-image-set(url("../img/clouds@2x.webp") type("image/webp"), url("../img/clouds@2x.png") type("image/png"));
-    background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"), url("../img/clouds@2x.png") type("image/png"));
   }
 
   .about {
