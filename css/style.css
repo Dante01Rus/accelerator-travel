@@ -2220,7 +2220,7 @@ button,
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 5;
 }
 
 .visually-hidden {
@@ -2811,7 +2811,7 @@ button,
   left: 0;
   top: 40px;
   width: 100%;
-  z-index: 2;
+  z-index: 6;
 }
 
 .header .container {
@@ -3285,6 +3285,7 @@ button,
 
 .tour {
   position: relative;
+  overflow: hidden;
 }
 
 .tour::after {
@@ -3423,6 +3424,7 @@ button,
 }
 
 .tour__swiper-slide {
+  position: relative;
   padding: 206px 20px 23px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3437,26 +3439,26 @@ button,
   color: #ffffff;
   cursor: -webkit-grab;
   cursor: grab;
-  background-size: cover;
   background-color: #575a05;
 }
 
-.tour__swiper-slide--caucasus {
-  background-image: -webkit-image-set(url("../img/tour/tour-1.png") 2x, url("../img/tour/tour-1@2x.png") 1x);
-  background-image: -webkit-image-set(url("../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
-  background-image: image-set(url("../img/tour/tour-1.webp") type("image/webp"), url("../img/tour/tour-1.png") type("image/png"));
+.tour__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.tour__swiper-slide--altai {
-  background-image: -webkit-image-set(url("../img/tour/tour-2.png") 2x, url("../img/tour/tour-2@2x.png") 1x);
-  background-image: -webkit-image-set(url("../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
-  background-image: image-set(url("../img/tour/tour-2.webp") type("image/webp"), url("../img/tour/tour-2.png") type("image/png"));
+.tour__background picture {
+  display: block;
+  height: 100%;
 }
 
-.tour__swiper-slide--adyghea {
-  background-image: -webkit-image-set(url("../img/tour/tour-3.png") 2x, url("../img/tour/tour-3@2x.png") 1x);
-  background-image: -webkit-image-set(url("../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
-  background-image: image-set(url("../img/tour/tour-3.webp") type("image/webp"), url("../img/tour/tour-3.png") type("image/png"));
+.tour__background img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
 }
 
 .tour__info {
@@ -3477,7 +3479,7 @@ button,
 }
 
 .tour__info-location {
-  padding: 10px 11px 8px 4px;
+  padding: 10px 4px 8px 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3536,7 +3538,6 @@ button,
 }
 
 .tour__details {
-  margin-top: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5141,26 +5142,8 @@ button,
   }
 
   .tour__swiper-buttons {
-    top: 83px;
+    top: 84px;
     right: 45px;
-  }
-
-  .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-tablet.png") 2x, url("../img/tour/tour-1-tablet@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"), url("../img/tour/tour-1-tablet.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-tablet.png") 2x, url("../img/tour/tour-2-tablet@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"), url("../img/tour/tour-2-tablet.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-tablet.png") 2x, url("../img/tour/tour-3-tablet@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"), url("../img/tour/tour-3-tablet.png") type("image/png"));
   }
 
   .tour__swiper-slide {
@@ -5219,7 +5202,7 @@ button,
   }
 
   .training__text-wrapper p {
-    margin-bottom: 67px;
+    margin-bottom: 66px;
     max-width: 560px;
   }
 
@@ -5229,12 +5212,12 @@ button,
   }
 
   .training__swiper-buttons {
-    top: 200px;
+    top: 199px;
     right: 45px;
   }
 
   .training__swiper {
-    margin-bottom: -17px;
+    margin-bottom: -16px;
     left: -30px;
     top: -30px;
     width: 738px;
@@ -5702,21 +5685,6 @@ button,
     background-image: image-set(url("../img/hero/altai-tablet@2x.webp") type("image/webp"), url("../img/hero/altai-tablet@2x.png") type("image/png"));
   }
 
-  .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-tablet@2x.webp") type("image/webp"), url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
-  }
-
   .about {
     background-image: -webkit-image-set(url("../img/about/about-tablet@2x.webp") type("image/webp"), url("../img/about/about-tablet@2x.png") type("image/png"));
     background-image: image-set(url("../img/about/about-tablet@2x.webp") type("image/webp"), url("../img/about/about-tablet@2x.png") type("image/png"));
@@ -5943,29 +5911,22 @@ button,
     right: 15px;
   }
 
-  .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-mobile.png") 2x, url("../img/tour/tour-1-mobile@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"), url("../img/tour/tour-1-mobile.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-mobile.png") 2x, url("../img/tour/tour-2-mobile@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"), url("../img/tour/tour-2-mobile.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-mobile.png") 2x, url("../img/tour/tour-3-mobile@2x.png") 1x);
-    background-image: -webkit-image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"), url("../img/tour/tour-3-mobile.png") type("image/png"));
-  }
-
   .tour__swiper-slide {
     padding-top: 197px;
     padding-bottom: 21px;
     width: 100%;
     max-width: none;
+  }
+
+  .tour__background picture {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
+  .tour__background img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 
   .tour__info {
@@ -6702,21 +6663,6 @@ button,
     background-image: image-set(url("../img/clouds-mobile@2x.webp") type("image/webp"), url("../img/clouds-mobile@2x.png") type("image/png"));
   }
 
-  .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3-mobile@2x.webp") type("image/webp"), url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
-  }
-
   .feedback {
     background-image: -webkit-image-set(url("../img/feedback-mobile@2x.webp") type("image/webp"), url("../img/feedback-mobile@2x.png") type("image/png"));
     background-image: image-set(url("../img/feedback-mobile@2x.webp") type("image/webp"), url("../img/feedback-mobile@2x.png") type("image/png"));
@@ -6824,21 +6770,6 @@ button,
   .tour .container {
     background-image: -webkit-image-set(url("../img/tour-little-cloud@2x.webp") type("image/webp"), url("../img/tour-little-cloud@2x.png") type("image/png"));
     background-image: image-set(url("../img/tour-little-cloud@2x.webp") type("image/webp"), url("../img/tour-little-cloud@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"), url("../img/tour/tour-1@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"), url("../img/tour/tour-1@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"), url("../img/tour/tour-2@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"), url("../img/tour/tour-2@2x.png") type("image/png"));
-  }
-
-  .tour__swiper-slide--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
-    background-image: image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"), url("../img/tour/tour-3@2x.png") type("image/png"));
   }
 
   .about {
