@@ -1,5 +1,6 @@
 .tour {
   position: relative;
+  overflow: hidden;
 
   &::after {
     position: absolute;
@@ -157,7 +158,7 @@
   right: 120px;
 
   @include vp-1199 {
-    top: 83px;
+    top: 84px;
     right: 45px;
   }
 
@@ -209,6 +210,7 @@
 }
 
 .tour__swiper-slide {
+  position: relative;
   padding: 206px 20px 23px;
   display: flex;
   flex-direction: column;
@@ -217,125 +219,7 @@
   height: auto;
   color: $color-default-white;
   cursor: grab;
-  background-size: cover;
   background-color: #575a05;
-
-  &--caucasus {
-    background-image: -webkit-image-set(url("../img/tour/tour-1.png") 2x,
-        url("../img/tour/tour-1@2x.png") 1x);
-
-    background-image: image-set(url("../img/tour/tour-1.webp") type("image/webp"),
-        url("../img/tour/tour-1.png") type("image/png"));
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/tour/tour-1@2x.webp") type("image/webp"),
-          url("../img/tour/tour-1@2x.png") type("image/png"));
-    }
-
-    @include vp-1199 {
-      background-image: -webkit-image-set(url("../img/tour/tour-1-tablet.png") 2x,
-          url("../img/tour/tour-1-tablet@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-1-tablet.webp") type("image/webp"),
-          url("../img/tour/tour-1-tablet.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-1-tablet@2x.webp") type("image/webp"),
-            url("../img/tour/tour-1-tablet@2x.png") type("image/png"));
-      }
-    }
-
-    @include vp-767 {
-      background-image: -webkit-image-set(url("../img/tour/tour-1-mobile.png") 2x,
-          url("../img/tour/tour-1-mobile@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-1-mobile.webp") type("image/webp"),
-          url("../img/tour/tour-1-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-1-mobile@2x.webp") type("image/webp"),
-            url("../img/tour/tour-1-mobile@2x.png") type("image/png"));
-      }
-    }
-  }
-
-  &--altai {
-    background-image: -webkit-image-set(url("../img/tour/tour-2.png") 2x,
-        url("../img/tour/tour-2@2x.png") 1x);
-
-    background-image: image-set(url("../img/tour/tour-2.webp") type("image/webp"),
-        url("../img/tour/tour-2.png") type("image/png"));
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/tour/tour-2@2x.webp") type("image/webp"),
-          url("../img/tour/tour-2@2x.png") type("image/png"));
-    }
-
-    @include vp-1199 {
-      background-image: -webkit-image-set(url("../img/tour/tour-2-tablet.png") 2x,
-          url("../img/tour/tour-2-tablet@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-2-tablet.webp") type("image/webp"),
-          url("../img/tour/tour-2-tablet.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-2-tablet@2x.webp") type("image/webp"),
-            url("../img/tour/tour-2-tablet@2x.png") type("image/png"));
-      }
-    }
-
-    @include vp-767 {
-      background-image: -webkit-image-set(url("../img/tour/tour-2-mobile.png") 2x,
-          url("../img/tour/tour-2-mobile@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-2-mobile.webp") type("image/webp"),
-          url("../img/tour/tour-2-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-2-mobile@2x.webp") type("image/webp"),
-            url("../img/tour/tour-2-mobile@2x.png") type("image/png"));
-      }
-    }
-  }
-
-  &--adyghea {
-    background-image: -webkit-image-set(url("../img/tour/tour-3.png") 2x,
-        url("../img/tour/tour-3@2x.png") 1x);
-
-    background-image: image-set(url("../img/tour/tour-3.webp") type("image/webp"),
-        url("../img/tour/tour-3.png") type("image/png"));
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/tour/tour-3@2x.webp") type("image/webp"),
-          url("../img/tour/tour-3@2x.png") type("image/png"));
-    }
-
-    @include vp-1199 {
-      background-image: -webkit-image-set(url("../img/tour/tour-3-tablet.png") 2x,
-          url("../img/tour/tour-3-tablet@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-3-tablet.webp") type("image/webp"),
-          url("../img/tour/tour-3-tablet.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-3-tablet@2x.webp") type("image/webp"),
-            url("../img/tour/tour-3-tablet@2x.png") type("image/png"));
-      }
-    }
-
-    @include vp-767 {
-      background-image: -webkit-image-set(url("../img/tour/tour-3-mobile.png") 2x,
-          url("../img/tour/tour-3-mobile@2x.png") 1x);
-
-      background-image: image-set(url("../img/tour/tour-3-mobile.webp") type("image/webp"),
-          url("../img/tour/tour-3-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/tour/tour-3-mobile@2x.webp") type("image/webp"),
-            url("../img/tour/tour-3-mobile@2x.png") type("image/png"));
-      }
-    }
-  }
 
   @include vp-1199 {
     width: 324px;
@@ -347,6 +231,33 @@
     padding-bottom: 21px;
     width: 100%;
     max-width: none;
+  }
+}
+
+.tour__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tour__background picture {
+  display: block;
+  height: 100%;
+
+  @include vp-767 {
+    object-fit: contain;
+  }
+}
+
+.tour__background img {
+  object-fit: cover;
+  height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+    object-fit: contain;
   }
 }
 
@@ -373,7 +284,7 @@
 }
 
 .tour__info-location {
-  padding: 10px 11px 8px 4px;
+  padding: 10px 4px 8px 4px;
   display: flex;
   justify-content: center;
   min-width: 108px;
@@ -439,7 +350,6 @@
 }
 
 .tour__details {
-  margin-top: auto;
   position: relative;
   display: flex;
   gap: 10px 53px;
