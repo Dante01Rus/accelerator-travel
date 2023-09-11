@@ -37,16 +37,29 @@ nav.addEventListener('click', (evt) => {
   }
 });
 
-if (window.innerWidth >= 1200) {
-  let height = header.clientHeight;
-  heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
-} else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-  let height = header.clientHeight;
-  heroSlide.style.paddingTop = `${DEFAULT_TABLET_PADDING + height}px`;
-} else if (window.innerWidth < 768) {
-  let height = header.clientHeight;
-  heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
-}
+const setPadding = () => {
+  if (window.innerWidth >= 1200) {
+    let height = header.clientHeight;
+    heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
+  } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+    let height = header.clientHeight;
+    heroSlide.style.paddingTop = `${DEFAULT_TABLET_PADDING + height}px`;
+  } else if (window.innerWidth < 768) {
+    let height = header.clientHeight;
+    heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
+  }
+};
+
+const observeMutations = () => {
+  const target = new MutationObserver(setPadding);
+
+  target.observe(header, {
+    childList: true,
+    subtree: true,
+  });
+};
+
+observeMutations();
 
 pageWrapper.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('wrapper')) {
