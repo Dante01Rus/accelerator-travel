@@ -1,4 +1,6 @@
 let init = false;
+let tourSlide = document.querySelector('.tour__swiper-slide');
+let tourSlideBackground = document.querySelector('.tour__background');
 
 const heroSwiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
